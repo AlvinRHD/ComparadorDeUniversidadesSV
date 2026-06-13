@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly
+wordcloud
+matplotlib
+folium
+streamlit-folium
+reportlab
+requests
+beautifulsoup4
+mysql-connector-python
