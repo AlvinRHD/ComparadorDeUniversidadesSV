@@ -1,14 +1,14 @@
 """
-PROYECTO FINAL — Comparador de Universidades El Salvador
+PROYECTO FINAL - Comparador de Universidades El Salvador
 Archivo: desktop_app.py
-Descripción: Aplicación de escritorio (Tkinter) — interfaz ALTERNATIVA/EXTRA
+Descripción: Aplicación de escritorio (Tkinter) - interfaz ALTERNATIVA/EXTRA
              a streamlit run dashboard.py. Lee el mismo JSON que genera
              crawler.py y muestra una tabla + una gráfica de barras.
 Ejecutar: python desktop_app.py
 """
 
 # ═══════════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS — desktop_app.py
+# 📌 MAPEO DE REQUISITOS - desktop_app.py
 # ═══════════════════════════════════════════════════════════════════
 # 🎨 INTERFAZ (requisito 6): "Aplicación de escritorio (Opcional)"
 #     -> Esta app es 100% Tkinter (librería estándar, no requiere instalar nada extra).
@@ -82,7 +82,7 @@ def cargar_dataframe():
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("🎓 Comparador de Universidades — El Salvador (App de escritorio)")
+        self.title("🎓 Comparador de Universidades - El Salvador (App de escritorio)")
         self.geometry("950x650")
 
         # - Barra superior con botones -

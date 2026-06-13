@@ -1,5 +1,5 @@
 """
-PROYECTO FINAL — Comparador de Universidades El Salvador
+PROYECTO FINAL - Comparador de Universidades El Salvador
 Archivo: crawler.py
 Descripción: Crawlea universidades, extrae datos (palabras clave, correos,
              teléfonos, imágenes), guarda JSON con timestamp, archivos por
@@ -18,7 +18,7 @@ from datetime import datetime
 from database import conectar, insertar_universidad, cerrar
 
 # ═══════════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS — crawler.py
+# 📌 MAPEO DE REQUISITOS - crawler.py
 # ═══════════════════════════════════════════════════════════════════
 # 🕷️ CRAWLER AUTOMÁTICO (obligatorio) -> función crawlear_universidad()
 #     ✅ Inicia desde una URL principal      -> url_inicial = info["url"]
@@ -116,7 +116,7 @@ FORMATOS_IMG = {".jpg", ".jpeg", ".png", ".webp"}
 
 
 # ----------------------─
-# SCRAPING — Correos, teléfonos, imágenes
+# SCRAPING - Correos, teléfonos, imágenes
 # ----------------------─
 
 def extraer_correos(html, soup):
@@ -201,7 +201,7 @@ def crawlear_universidad(siglas, info):
     imagenes_ok = False  # solo descargamos imágenes de la primera página
 
     print(f"\n{'='*58}")
-    print(f"  {siglas} — {nombre}")
+    print(f"  {siglas} - {nombre}")
     print(f"{'='*58}")
 
     while pendientes and len(visitadas) < MAX_PAGINAS:  # 🕷️ REQUISITO: "Limita la cantidad de páginas visitadas"
@@ -221,7 +221,7 @@ def crawlear_universidad(siglas, info):
             )
             if resp.status_code != 200:
                 # ⚠️ REQUISITO: manejo de "páginas inexistentes" (HTTP distinto de 200)
-                print(f"       HTTP {resp.status_code} — omitida")
+                print(f"       HTTP {resp.status_code} - omitida")
                 continue
 
             soup  = BeautifulSoup(resp.text, "lxml")
@@ -302,7 +302,7 @@ if __name__ == "__main__":
     unis = {k: v for k, v in UNIVERSIDADES.items() if not SOLO_DEMO or v["demo"]}
 
     print("="*58)
-    print("  COMPARADOR DE UNIVERSIDADES — EL SALVADOR")
+    print("  COMPARADOR DE UNIVERSIDADES - EL SALVADOR")
     print("="*58)
     print(f"  Universidades a crawlear: {len(unis)}")
     print(f"  Páginas por universidad:  {MAX_PAGINAS}")

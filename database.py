@@ -1,5 +1,5 @@
 """
-PROYECTO FINAL — Comparador de Universidades El Salvador
+PROYECTO FINAL - Comparador de Universidades El Salvador
 Archivo: database.py
 Descripción: Conexión a MySQL, creación automática de BD y tabla,
              e inserción de registros scrapeados.
@@ -9,7 +9,7 @@ import mysql.connector
 from mysql.connector import Error
 
 # ═══════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS — database.py
+# 📌 MAPEO DE REQUISITOS - database.py
 # ═══════════════════════════════════════════════════════════════
 # ⭐ EXTRA (puntos opcionales): Almacenamiento en base de datos MySQL
 #     -> conectar()            : crea la BD y la tabla si no existen
@@ -76,7 +76,7 @@ def conectar():
         cursor.execute(SQL_CREAR_TABLA)
         conn.commit()
 
-        print(f"  [DB] Conectado a MySQL — base de datos: {DB_NAME}")
+        print(f"  [DB] Conectado a MySQL - base de datos: {DB_NAME}")
         return conn
 
     except Error as e:

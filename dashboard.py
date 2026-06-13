@@ -1,5 +1,5 @@
 """
-PROYECTO FINAL — Comparador de Universidades El Salvador
+PROYECTO FINAL - Comparador de Universidades El Salvador
 Archivo: dashboard.py
 Ejecutar: streamlit run dashboard.py
 """
@@ -20,7 +20,7 @@ from reportlab.lib.units import inch
 from datetime import datetime
 
 # ═══════════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS — dashboard.py
+# 📌 MAPEO DE REQUISITOS - dashboard.py
 # ═══════════════════════════════════════════════════════════════════
 # 💾 ALMACENAMIENTO (obligatorio):
 #     ✅ DataFrame de pandas -> sección "DATAFRAMES" (df_resumen, df_detalle)
@@ -55,7 +55,7 @@ from datetime import datetime
 # ----------------------─
 
 st.set_page_config(page_title="Universidades El Salvador", page_icon="🎓", layout="wide")
-st.title("🎓 Comparador de Universidades — El Salvador")
+st.title("🎓 Comparador de Universidades - El Salvador")
 st.caption("Web Scraping + Minería de Datos | Proyecto Final BD")
 
 CARPETA_RESULTADOS = "resultados"
@@ -132,12 +132,12 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 ])
 
 # ══════════════════════════════════════════════
-# TAB 1 — RESUMEN
+# TAB 1 - RESUMEN
 # ══════════════════════════════════════════════
 
 with tab1:
     # Tabla de resultados (requisito visualización)
-    st.subheader("📋 Tabla de resultados — DataFrame principal")
+    st.subheader("📋 Tabla de resultados - DataFrame principal")
     st.caption("Datos almacenados en pandas DataFrame y visualizados aquí")
     st.dataframe(
         df_resumen[["Siglas","Universidad","Páginas visitadas","Coincidencias","Correos","Teléfonos"]],
@@ -147,19 +147,19 @@ with tab1:
 
     col_a, col_b = st.columns(2)
     with col_a:
-        # Gráfica de barras — coincidencias (requisito)
+        # Gráfica de barras - coincidencias (requisito)
         fig = px.bar(df_resumen, x="Siglas", y="Coincidencias", color="Siglas",
                      text="Coincidencias",
-                     title="📊 Gráfica de barras — Palabras clave por universidad",
+                     title="📊 Gráfica de barras - Palabras clave por universidad",
                      labels={"Coincidencias": "Palabras clave encontradas"})
         fig.update_traces(textposition="outside")
         fig.update_layout(showlegend=False, xaxis_title="Universidad", yaxis_title="Cantidad")
         st.plotly_chart(fig, width="stretch")
 
     with col_b:
-        # Histograma — páginas visitadas (requisito)
+        # Histograma - páginas visitadas (requisito)
         fig2 = px.histogram(df_resumen, x="Páginas visitadas", nbins=5,
-                            title="📊 Histograma — Distribución de páginas visitadas",
+                            title="📊 Histograma - Distribución de páginas visitadas",
                             labels={"Páginas visitadas": "Páginas visitadas", "count": "Frecuencia"},
                             color_discrete_sequence=["#3b82f6"])
         fig2.update_layout(xaxis_title="Páginas visitadas", yaxis_title="Frecuencia")
@@ -176,11 +176,11 @@ with tab1:
 
 
 # ══════════════════════════════════════════════
-# TAB 2 — MINERÍA DE DATOS
+# TAB 2 - MINERÍA DE DATOS
 # ══════════════════════════════════════════════
 
 with tab2:
-    st.subheader("📈 Minería de Datos — Análisis académico")
+    st.subheader("📈 Minería de Datos - Análisis académico")
 
     if df_detalle.empty:
         # ⚠️ REQUISITO: manejo de errores -> datos vacíos
@@ -203,7 +203,7 @@ with tab2:
         with col_a:
             # Top 10 palabras
             fig_top = px.bar(freq.head(10), x="Frecuencia", y="Palabra", orientation="h",
-                             title="📝 Top 10 — Términos académicos más frecuentes",
+                             title="📝 Top 10 - Términos académicos más frecuentes",
                              labels={"Frecuencia": "Veces encontrado", "Palabra": "Término"},
                              color="Frecuencia", color_continuous_scale="Blues")
             fig_top.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
@@ -221,7 +221,7 @@ with tab2:
             )
             st.dataframe(predominantes, width="stretch", hide_index=True)
 
-            st.markdown("#### 📊 Tendencia — Universidades con más presencia académica")
+            st.markdown("#### 📊 Tendencia - Universidades con más presencia académica")
             fig_tend = px.bar(
                 df_resumen.sort_values("Coincidencias", ascending=False),
                 x="Siglas", y="Coincidencias",
@@ -245,7 +245,7 @@ with tab2:
         st.divider()
 
         # DataFrame completo con filtro
-        st.markdown("#### 🔎 Explorar datos — filtro por universidad")
+        st.markdown("#### 🔎 Explorar datos - filtro por universidad")
         uni_sel = st.selectbox("Universidad:", ["Todas"] + list(datos.keys()), key="filtro_mineria")
         df_f = df_detalle if uni_sel == "Todas" else df_detalle[df_detalle["Universidad"] == uni_sel]
         st.dataframe(df_f[["Universidad","Palabra","Título","URL"]].drop_duplicates(),
@@ -253,7 +253,7 @@ with tab2:
 
 
 # ══════════════════════════════════════════════
-# TAB 3 — NUBE DE PALABRAS
+# TAB 3 - NUBE DE PALABRAS
 # ══════════════════════════════════════════════
 
 with tab3:
@@ -294,7 +294,7 @@ with tab3:
 
 
 # ══════════════════════════════════════════════
-# TAB 4 — MAPA
+# TAB 4 - MAPA
 # ══════════════════════════════════════════════
 
 with tab4:
@@ -310,7 +310,7 @@ with tab4:
                 radius=10,
                 color="#1d4ed8",
                 fill=True, fill_color="#3b82f6", fill_opacity=0.85,
-                tooltip=f"{row['Siglas']} — {row['Universidad']}",
+                tooltip=f"{row['Siglas']} - {row['Universidad']}",
                 popup=folium.Popup(
                     f"<b>{row['Universidad']}</b><br>"
                     f"Páginas visitadas: {row['Páginas visitadas']}<br>"
@@ -326,7 +326,7 @@ with tab4:
 
 
 # ══════════════════════════════════════════════
-# TAB 5 — COMPARACIÓN
+# TAB 5 - COMPARACIÓN
 # ══════════════════════════════════════════════
 
 with tab5:
@@ -351,7 +351,7 @@ with tab5:
             col1, col2 = st.columns(2)
             for col, siglas, d, palabras in [(col1, uni_a, da, palabras_a), (col2, uni_b, db, palabras_b)]:
                 with col:
-                    st.markdown(f"### {siglas} — {d['nombre']}")
+                    st.markdown(f"### {siglas} - {d['nombre']}")
                     st.metric("Páginas visitadas", d["paginas_visitadas"])
                     st.metric("Coincidencias",     d["coincidencias"])
                     st.metric("Correos",           len(d.get("correos",[])))
@@ -384,13 +384,13 @@ with tab5:
 
 
 # ══════════════════════════════════════════════
-# TAB 6 — ACERCA DE + EXPORTAR PDF
+# TAB 6 - ACERCA DE + EXPORTAR PDF
 # ══════════════════════════════════════════════
 
 with tab6:
     st.subheader("ℹ️ Acerca del proyecto")
     st.markdown("""
-    **Proyecto Final — Bases de Datos**  
+    **Proyecto Final - Bases de Datos**  
     Universidad de Oriente (UNIVO) · El Salvador · 2026
 
     Sistema de **web crawling y scraping** sobre los sitios oficiales de las universidades
@@ -436,7 +436,7 @@ with tab6:
         story = []
 
         # Encabezado
-        story.append(Paragraph("Reporte de Universidades — El Salvador", titulo_style))
+        story.append(Paragraph("Reporte de Universidades - El Salvador", titulo_style))
         story.append(Paragraph(f"Generado: {datetime.now().strftime('%d/%m/%Y %H:%M')} | Archivo: {archivo_sel}", normal))
         story.append(HRFlowable(width="100%", thickness=1.5, color=azul, spaceAfter=10))
 
@@ -483,7 +483,7 @@ with tab6:
 
         # Top palabras
         story.append(Spacer(1, 10))
-        story.append(Paragraph("Minería de datos — Top 10 términos académicos", sub_style))
+        story.append(Paragraph("Minería de datos - Top 10 términos académicos", sub_style))
         if not df_detalle.empty:
             top = (df_detalle.groupby("Palabra").size()
                    .reset_index(name="Frecuencia")
@@ -506,7 +506,7 @@ with tab6:
         # Pie
         story.append(Spacer(1, 16))
         story.append(HRFlowable(width="100%", thickness=0.8, color=colors.HexColor("#cbd5e1")))
-        story.append(Paragraph("Proyecto Final BD — UNIVO 2026 | Alvin Rosales U20260430", normal))
+        story.append(Paragraph("Proyecto Final BD - UNIVO 2026 | Alvin Rosales U20260430", normal))
 
         doc.build(story)
         buffer.seek(0)
