@@ -84,7 +84,7 @@ UNIVERSIDADES = {
 }
 
 # Cambiá a False para correr TODAS las universidades
-SOLO_DEMO    = True
+SOLO_DEMO    = False
 MAX_PAGINAS  = 3
 PAUSA        = 0.5
 

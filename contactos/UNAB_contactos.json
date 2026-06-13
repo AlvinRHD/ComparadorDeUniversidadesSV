@@ -1,0 +1,23 @@
+{
+    "universidad": "Universidad Andrés Bello",
+    "siglas": "UNAB",
+    "correos": [
+        "gabriela.garcia@unab.edu.sv",
+        "elsymargarita.hernandez@unab.edu.sv",
+        "nury.yanez@unab.edu.sv",
+        "karina.bonilla@unab.edu.sv",
+        "rebeca.munoz@unab.edu.sv"
+    ],
+    "telefonos": [
+        "2627-5900",
+        "2510-7460",
+        "2510-7400",
+        "2627-5908",
+        "2399-2800",
+        "2399-2805",
+        "2420-6305",
+        "2510-7411",
+        "2240 8000",
+        "2420-6300"
+    ]
+}

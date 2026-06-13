@@ -1,0 +1,1865 @@
+{
+    "UNIVO": {
+        "siglas": "UNIVO",
+        "nombre": "Universidad de Oriente",
+        "paginas_visitadas": 3,
+        "coincidencias": 10,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.univo.edu.sv/",
+                "titulo": "UNIVO – Universidad de Oriente"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.univo.edu.sv/",
+                "titulo": "UNIVO – Universidad de Oriente"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.univo.edu.sv/",
+                "titulo": "UNIVO – Universidad de Oriente"
+            },
+            {
+                "palabra": "carrera",
+                "url": "http://www.univo.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico – UNIVO"
+            },
+            {
+                "palabra": "maestría",
+                "url": "http://www.univo.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico – UNIVO"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "http://www.univo.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico – UNIVO"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.univo.edu.sv/direccion-de-formacion-continua/",
+                "titulo": "Dirección de formación continua – UNIVO"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.univo.edu.sv/direccion-de-formacion-continua/",
+                "titulo": "Dirección de formación continua – UNIVO"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.univo.edu.sv/direccion-de-formacion-continua/",
+                "titulo": "Dirección de formación continua – UNIVO"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.univo.edu.sv/direccion-de-formacion-continua/",
+                "titulo": "Dirección de formación continua – UNIVO"
+            }
+        ],
+        "correos": [
+            "efpunivo@univo.edu.sv",
+            "admisiones@univo.edu.sv",
+            "info@email.com",
+            "info@univo.edu.sv"
+        ],
+        "telefonos": [
+            "2661-8882",
+            "+503 2668-3700",
+            "2661-8207"
+        ],
+        "lat": 13.4801,
+        "lng": -88.1775
+    },
+    "UGB": {
+        "siglas": "UGB",
+        "nombre": "Universidad Capitán General Gerardo Barrios",
+        "paginas_visitadas": 3,
+        "coincidencias": 8,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ugb.edu.sv/",
+                "titulo": "UNIVERSIDAD GERARDO BARRIOS"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ugb.edu.sv/",
+                "titulo": "UNIVERSIDAD GERARDO BARRIOS"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ugb.edu.sv/",
+                "titulo": "UNIVERSIDAD GERARDO BARRIOS"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ugb.edu.sv/",
+                "titulo": "UNIVERSIDAD GERARDO BARRIOS"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ugb.edu.sv/",
+                "titulo": "UNIVERSIDAD GERARDO BARRIOS"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.ugb.edu.sv/carreras/",
+                "titulo": "Carreras - Universidad Gerardo Barrios | UGB"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ugb.edu.sv/carreras/",
+                "titulo": "Carreras - Universidad Gerardo Barrios | UGB"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.ugb.edu.sv/calendarizacion/",
+                "titulo": "Calendarización UGB"
+            }
+        ],
+        "correos": [
+            "consultas@ugb.edu.sv"
+        ],
+        "telefonos": [
+            "2645 6500",
+            "2645-6500"
+        ],
+        "lat": 13.4834,
+        "lng": -88.1789
+    },
+    "UES": {
+        "siglas": "UES",
+        "nombre": "Universidad de El Salvador",
+        "paginas_visitadas": 3,
+        "coincidencias": 20,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ues.edu.sv/contacto/",
+                "titulo": "Contacto – Universidad de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ues.edu.sv/contacto/",
+                "titulo": "Contacto – Universidad de El Salvador"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ues.edu.sv/contacto/",
+                "titulo": "Contacto – Universidad de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ues.edu.sv/contacto/",
+                "titulo": "Contacto – Universidad de El Salvador"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ues.edu.sv/contacto/",
+                "titulo": "Contacto – Universidad de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ues.edu.sv/contacto/",
+                "titulo": "Contacto – Universidad de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ues.edu.sv/universidad/",
+                "titulo": "Universidad – Universidad de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ues.edu.sv/universidad/",
+                "titulo": "Universidad – Universidad de El Salvador"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ues.edu.sv/universidad/",
+                "titulo": "Universidad – Universidad de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ues.edu.sv/universidad/",
+                "titulo": "Universidad – Universidad de El Salvador"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ues.edu.sv/universidad/",
+                "titulo": "Universidad – Universidad de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ues.edu.sv/universidad/",
+                "titulo": "Universidad – Universidad de El Salvador"
+            }
+        ],
+        "correos": [
+            "dti@ues.edu.sv",
+            "infocenter@unicamp.com",
+            "fiscalia.general@ues.edu.sv",
+            "secretaria.relaciones@ues.edu.sv",
+            "udf@ues.edu.sv",
+            "bienestar.universitario@ues.edu.sv",
+            "collegeadmissions@unicamp.com",
+            "tesoreria@ues.edu.sv",
+            "agu@ues.edu.sv",
+            "secretaria.posgrado@ues.edu.sv",
+            "ingreso.universitario@ues.edu.sv",
+            "secretaria.comunicaciones@ues.edu.sv",
+            "mediainquiries@unicamp.com",
+            "ufi@ues.edu.sv",
+            "gradadmissions@unicamp.com"
+        ],
+        "telefonos": [
+            "2021\n2024",
+            "2511-2059",
+            "2511-2046",
+            "2511-2055",
+            "2511-2080",
+            "2511-2012",
+            "2511-2000",
+            "2511-2022",
+            "2511-2058",
+            "2511-2036",
+            "2021\n2026",
+            "2511-2005",
+            "2511-2019",
+            "2511-2010",
+            "2024\n2024"
+        ],
+        "lat": 13.7176,
+        "lng": -89.2016
+    },
+    "UNAB": {
+        "siglas": "UNAB",
+        "nombre": "Universidad Andrés Bello",
+        "paginas_visitadas": 3,
+        "coincidencias": 11,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.unab.edu.sv/",
+                "titulo": "Universidad Dr. Andrés Bello (UNAB) | El Salvador, Centro América"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.unab.edu.sv/",
+                "titulo": "Universidad Dr. Andrés Bello (UNAB) | El Salvador, Centro América"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.unab.edu.sv/",
+                "titulo": "Universidad Dr. Andrés Bello (UNAB) | El Salvador, Centro América"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.unab.edu.sv/",
+                "titulo": "Universidad Dr. Andrés Bello (UNAB) | El Salvador, Centro América"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.unab.edu.sv/bolsa-de-empleos/",
+                "titulo": "Bolsa de Empleos - UNAB"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.unab.edu.sv/bolsa-de-empleos/",
+                "titulo": "Bolsa de Empleos - UNAB"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.unab.edu.sv/bolsa-de-empleos/",
+                "titulo": "Bolsa de Empleos - UNAB"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.unab.edu.sv/bolsa-de-empleos/",
+                "titulo": "Bolsa de Empleos - UNAB"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.unab.edu.sv/unidad-de-egresados/",
+                "titulo": "Unidad de Egresados | Universidad Dr. Andrés Bello (UNAB)"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.unab.edu.sv/unidad-de-egresados/",
+                "titulo": "Unidad de Egresados | Universidad Dr. Andrés Bello (UNAB)"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.unab.edu.sv/unidad-de-egresados/",
+                "titulo": "Unidad de Egresados | Universidad Dr. Andrés Bello (UNAB)"
+            }
+        ],
+        "correos": [
+            "gabriela.garcia@unab.edu.sv",
+            "elsymargarita.hernandez@unab.edu.sv",
+            "nury.yanez@unab.edu.sv",
+            "karina.bonilla@unab.edu.sv",
+            "rebeca.munoz@unab.edu.sv"
+        ],
+        "telefonos": [
+            "2627-5900",
+            "2510-7460",
+            "2510-7400",
+            "2627-5908",
+            "2399-2800",
+            "2399-2805",
+            "2420-6305",
+            "2510-7411",
+            "2240 8000",
+            "2420-6300"
+        ],
+        "lat": 13.6921,
+        "lng": -89.2231
+    },
+    "UDB": {
+        "siglas": "UDB",
+        "nombre": "Universidad Don Bosco",
+        "paginas_visitadas": 3,
+        "coincidencias": 17,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.udb.edu.sv/udb/pagina/nuevoingreso",
+                "titulo": "Universidad Don Bosco © | Nuevo Ingreso"
+            }
+        ],
+        "correos": [
+            "julio.gutierrez@udb.edu.sv",
+            "julia.urrutia@udb.edu.sv",
+            "eduardo.menjivar@udb.edu.sv",
+            "carlos.mata@udb.edu.sv",
+            "idiomas@udb.edu.sv",
+            "escuela.contyadmon@udb.edu.sv",
+            "katya.sorto@udb.edu.sv",
+            "escuela.electronica@udb.edu.sv",
+            "fatima.rivera@udb.edu.sv",
+            "carlos.montoya@udb.edu.sv",
+            "moises.guerra@udb.edu.sv",
+            "monica.castaneda@udb.edu.sv",
+            "cesar.palma@udb.edu.sv",
+            "ana.argueta@udb.edu.sv",
+            "escuela.computacion@udb.edu.sv",
+            "escuela.mecanica@udb.edu.sv",
+            "rsosa@udb.edu.sv",
+            "jordan.herrera@udb.edu.sv",
+            "herson.serrano@udb.edu.sv",
+            "milton.narvaez@udb.edu.sv",
+            "ortoedu@udb.edu.sv",
+            "diseno@udb.edu.sv",
+            "claudia.morales@udb.edu.sv",
+            "sonia.bermudez@udb.edu.sv",
+            "udbvirtual@udb.edu.sv",
+            "facultad.aeronautica@udb.edu.sv",
+            "escuela.mercadeo@udb.edu.sv",
+            "carlos.zelaya@udb.edu.sv",
+            "mauricio.figueroa@udb.edu.sv",
+            "yaneth.medrano@udb.edu.sv",
+            "jose.martinez@udb.edu.sv",
+            "esc.comunicaciones@udb.edu.sv",
+            "edgardo.cruz@udb.edu.sv",
+            "escuela.biomedica@udb.edu.sv",
+            "escuela.electrica@udb.edu.sv",
+            "guillermo@udb.edu.sv",
+            "celia.sibrian@udb.edu.sv",
+            "gilberto.carrillo@udb.edu.sv",
+            "juan.torres@udb.edu.sv",
+            "escuela.industrial@udb.edu.sv",
+            "monica.perez@udb.edu.sv",
+            "juan.maldonado@udb.edu.sv"
+        ],
+        "telefonos": [
+            "7989-1377",
+            "2527-2335",
+            "2527-2341",
+            "2527-2300",
+            "2251-8255",
+            "2527-2324",
+            "2527-2346",
+            "2527-2336",
+            "2527-2304",
+            "2251-8200",
+            "2251-8235",
+            "2251-8248"
+        ],
+        "lat": 13.708,
+        "lng": -89.173
+    },
+    "UCA": {
+        "siglas": "UCA",
+        "nombre": "Universidad Centroamericana José Simeón Cañas",
+        "paginas_visitadas": 3,
+        "coincidencias": 10,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.uca.edu.sv/calendario-academico/",
+                "titulo": "Calendario académico - Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.uca.edu.sv/calendario-academico/",
+                "titulo": "Calendario académico - Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.uca.edu.sv/calendario-academico/",
+                "titulo": "Calendario académico - Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.uca.edu.sv/calendario-academico/",
+                "titulo": "Calendario académico - Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.uca.edu.sv/personal/",
+                "titulo": "Directorio institucional UCA"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.uca.edu.sv/personal/",
+                "titulo": "Directorio institucional UCA"
+            }
+        ],
+        "correos": [
+            "%63%65%6e%74%72%6f%2e%66%6f%72%6d%61%63%69%6f%6e%63%6f%6e%74%69%6e%75%61%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%73%65%67%75%72%69%64%61%64%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%64%65%63%61%6e%61%74%6f%2e%70%6f%73%74%67%72%61%64%6f%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%63%65%6e%74%72%6f%2e%61%73%75%6e%74%6f%73%65%73%74%75%64%69%61%6e%74%69%6c%65%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%63%75%6f%74%61%73%2e%64%69%66%65%72%65%6e%63%69%61%64%61%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%64%65%63%61%6e%61%74%6f%2e%69%6e%67%65%6e%69%65%72%69%61%79%61%72%71%75%69%74%65%63%74%75%72%61%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%61%64%6d%69%73%69%6f%6e%65%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%64%65%63%61%6e%61%74%6f%2e%63%63%65%63%6f%6e%6f%6d%69%63%61%73%79%65%6d%70%72%65%73%61%72%69%61%6c%65%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%64%65%63%61%6e%61%74%6f%2e%63%63%73%6f%63%69%61%6c%65%73%79%68%75%6d%61%6e%69%64%61%64%65%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%72%65%63%74%6f%72%69%61%40%75%63%61%2e%65%64%75%2e%73%76",
+            "%62%65%63%61%73%70%61%72%63%69%61%6c%65%73%40%75%63%61%2e%65%64%75%2e%73%76",
+            "direccion.comunicaciones@uca.edu.sv",
+            "%64%69%72%65%63%63%69%6f%6e%2e%63%6f%6d%75%6e%69%63%61%63%69%6f%6e%65%73%40%75%63%61%2e%65%64%75%2e%73%76"
+        ],
+        "telefonos": [
+            "2254-9700",
+            "2210-6632",
+            "2210-6620",
+            "2210-6651",
+            "2210-6653",
+            "2210-6648",
+            "2210-6644",
+            "2210-6600",
+            "2210-6676"
+        ],
+        "lat": 13.6763,
+        "lng": -89.2389
+    },
+    "UTEC": {
+        "siglas": "UTEC",
+        "nombre": "Universidad Tecnológica de El Salvador",
+        "paginas_visitadas": 3,
+        "coincidencias": 24,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.utec.edu.sv/home/historia/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.utec.edu.sv/home/himno_utec",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.utec.edu.sv/home/himno_utec",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.utec.edu.sv/home/himno_utec",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2001-2003",
+            "2275-2700",
+            "6420-4295",
+            "2275-8888",
+            "2261-0270",
+            "2022-2027",
+            "2275-7566",
+            "6100-0777"
+        ],
+        "lat": 13.6986,
+        "lng": -89.191
+    },
+    "UJMD": {
+        "siglas": "UJMD",
+        "nombre": "Universidad Dr. José Matías Delgado",
+        "paginas_visitadas": 3,
+        "coincidencias": 33,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ujmd.edu.sv/",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ujmd.edu.sv",
+                "titulo": "Inicio - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ujmd.edu.sv/inicio-admisiones/",
+                "titulo": "Inicio Admisiones - Universidad Dr. José Matías Delgado"
+            }
+        ],
+        "correos": [
+            "contacto@ujmd.edu.sv"
+        ],
+        "telefonos": [
+            "2212 9400",
+            "2212-9400"
+        ],
+        "lat": 13.6698,
+        "lng": -89.2512
+    },
+    "UEES": {
+        "siglas": "UEES",
+        "nombre": "Universidad Evangélica de El Salvador",
+        "paginas_visitadas": 3,
+        "coincidencias": 17,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.uees.edu.sv/",
+                "titulo": "Inicio - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.uees.edu.sv/docencia/",
+                "titulo": "Modelo Educativo - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.uees.edu.sv/docencia/",
+                "titulo": "Modelo Educativo - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.uees.edu.sv/docencia/",
+                "titulo": "Modelo Educativo - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.uees.edu.sv/docencia/",
+                "titulo": "Modelo Educativo - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.uees.edu.sv/docencia/",
+                "titulo": "Modelo Educativo - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uees.edu.sv/docencia/",
+                "titulo": "Modelo Educativo - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.uees.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.uees.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.uees.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico - Universidad Evangélica de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uees.edu.sv/calendario-academico/",
+                "titulo": "Calendario Académico - Universidad Evangélica de El Salvador"
+            }
+        ],
+        "correos": [
+            "mercadeo@uees.edu.sv"
+        ],
+        "telefonos": [
+            "+503 6195-0000",
+            "+503 2275-4000",
+            "+503 2275-4022"
+        ],
+        "lat": 13.7005,
+        "lng": -89.2198
+    },
+    "UMA": {
+        "siglas": "UMA",
+        "nombre": "Universidad Modular Abierta",
+        "paginas_visitadas": 1,
+        "coincidencias": 0,
+        "resultados": [],
+        "correos": [],
+        "telefonos": [],
+        "lat": 13.695,
+        "lng": -89.188
+    },
+    "USAM": {
+        "siglas": "USAM",
+        "nombre": "Universidad Salvadoreña Alberto Masferrer",
+        "paginas_visitadas": 3,
+        "coincidencias": 7,
+        "resultados": [
+            {
+                "palabra": "pregrado",
+                "url": "https://www.usam.edu.sv/",
+                "titulo": "Universidad Salvadoreña Alberto Masferrer"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.usam.edu.sv/",
+                "titulo": "Universidad Salvadoreña Alberto Masferrer"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.usam.edu.sv/",
+                "titulo": "Universidad Salvadoreña Alberto Masferrer"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.usam.edu.sv/centro-recursos/tutoriales",
+                "titulo": "Tutoriales - Universidad Salvadoreña Alberto Masferrer"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.usam.edu.sv/centro-recursos/tutoriales",
+                "titulo": "Tutoriales - Universidad Salvadoreña Alberto Masferrer"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.usam.edu.sv/centro-recursos/tutoriales",
+                "titulo": "Tutoriales - Universidad Salvadoreña Alberto Masferrer"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.usam.edu.sv/centro-recursos/tutoriales",
+                "titulo": "Tutoriales - Universidad Salvadoreña Alberto Masferrer"
+            }
+        ],
+        "correos": [
+            "gestor8entornos@liveusam.edu.sv",
+            "secreacademica@liveusam.edu.sv",
+            "gestor1entornos@liveusam.edu.sv",
+            "gestor5entornos@liveusam.edu.sv",
+            "gestor3entornos@liveusam.edu.sv",
+            "asistentesistemaacademico@liveusam.edu.sv",
+            "secretariaadmonacademica1@liveusam.edu.sv",
+            "gestor4entornos@liveusam.edu.sv",
+            "secretariaadmonacademica2@liveusam.edu.sv"
+        ],
+        "telefonos": [
+            "2231-9667",
+            "2231-9600"
+        ],
+        "lat": 13.7012,
+        "lng": -89.1956
+    },
+    "UPED": {
+        "siglas": "UPED",
+        "nombre": "Universidad Pedagógica de El Salvador",
+        "paginas_visitadas": 1,
+        "coincidencias": 0,
+        "resultados": [],
+        "correos": [],
+        "telefonos": [],
+        "lat": 13.702,
+        "lng": -89.21
+    },
+    "UAE": {
+        "siglas": "UAE",
+        "nombre": "Universidad Albert Einstein",
+        "paginas_visitadas": 3,
+        "coincidencias": 18,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.uae.edu.sv/",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.uae.edu.sv",
+                "titulo": "INICIO | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.uae.edu.sv/blank-5-1-1",
+                "titulo": "QUIENES SOMOS | Universidad Albert Einstein"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.uae.edu.sv/blank-5-1-1",
+                "titulo": "QUIENES SOMOS | Universidad Albert Einstein"
+            }
+        ],
+        "correos": [
+            "18d2f96d279149989b95faf0a4b41882@sentry-next.wixpress.com",
+            "8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com",
+            "605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com",
+            "2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com",
+            "5d1795a2db124a268f1e1bd88f503500@sentry.wixpress.com"
+        ],
+        "telefonos": [],
+        "lat": 13.7035,
+        "lng": -89.209
+    },
+    "UFG": {
+        "siglas": "UFG",
+        "nombre": "Universidad Francisco Gavidia",
+        "paginas_visitadas": 3,
+        "coincidencias": 19,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ufg.edu.sv/",
+                "titulo": "Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ufg.edu.sv/",
+                "titulo": "Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ufg.edu.sv/",
+                "titulo": "Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.ufg.edu.sv/institucion",
+                "titulo": "Institución - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.ufg.edu.sv/oferta-academica",
+                "titulo": "Oferta Académica - UFG | Universidad Francisco Gavidia El Salvador"
+            }
+        ],
+        "correos": [
+            "jperez@ufg.edu.sv",
+            "sosorto@ufg.edu.sv",
+            "tmendoza@ufg.edu.sv",
+            "nyubiny@ufg.edu.sv",
+            "gmunoz@ufg.edu.sv",
+            "samaya@ufg.edu.sv",
+            "dobletitulacion@ufg.edu.sv",
+            "mseligman@ufg.edu.sv",
+            "rmportillo@ufg.edu.sv",
+            "admisiones@ufg.edu.sv",
+            "rmendoza@ufg.edu.sv",
+            "curias@ufg.edu.sv",
+            "rmoran@ufg.edu.sv",
+            "marior@ufg.edu.sv",
+            "lmartinez@ufg.edu.sv",
+            "jmarroquin@ufg.edu.sv",
+            "ruizaguilar@ufg.edu.sv"
+        ],
+        "telefonos": [
+            "7291-2036",
+            "2209-2834",
+            "2209-2837"
+        ],
+        "lat": 13.6994,
+        "lng": -89.1914
+    },
+    "UPES": {
+        "siglas": "UPES",
+        "nombre": "Universidad Politécnica de El Salvador",
+        "paginas_visitadas": 3,
+        "coincidencias": 4,
+        "resultados": [
+            {
+                "palabra": "derecho",
+                "url": "https://www.upes.edu.sv/",
+                "titulo": "UPES"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.upes.edu.sv/nuevo-ingreso/",
+                "titulo": "Nuevo Ingreso Â· UPES"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.upes.edu.sv/nuevo-ingreso/",
+                "titulo": "Nuevo Ingreso Â· UPES"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.upes.edu.sv/vida-universitaria/biblioteca/",
+                "titulo": "Biblioteca Â· UPES"
+            }
+        ],
+        "correos": [
+            "atencionalestudiante@upes.edu.sv",
+            "info@upes.edu.sv",
+            "nuevoingreso@upes.edu.sv"
+        ],
+        "telefonos": [
+            "+503 2231 8800",
+            "+503 2231-8820",
+            "+503 2231-8817"
+        ],
+        "lat": 13.6978,
+        "lng": -89.1923
+    },
+    "UPAN": {
+        "siglas": "UPAN",
+        "nombre": "Universidad Panamericana de El Salvador",
+        "paginas_visitadas": 1,
+        "coincidencias": 4,
+        "resultados": [
+            {
+                "palabra": "facultad",
+                "url": "https://www.upan.edu.sv/",
+                "titulo": "Universidad Panamericana – Formar profesionales integrales es lo que nos ha caracterizado siempre."
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.upan.edu.sv/",
+                "titulo": "Universidad Panamericana – Formar profesionales integrales es lo que nos ha caracterizado siempre."
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.upan.edu.sv/",
+                "titulo": "Universidad Panamericana – Formar profesionales integrales es lo que nos ha caracterizado siempre."
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.upan.edu.sv/",
+                "titulo": "Universidad Panamericana – Formar profesionales integrales es lo que nos ha caracterizado siempre."
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2527-2000",
+            "7204-3379"
+        ],
+        "lat": 13.689,
+        "lng": -89.234
+    },
+    "ULS": {
+        "siglas": "ULS",
+        "nombre": "Universidad Luterana Salvadoreña",
+        "paginas_visitadas": 1,
+        "coincidencias": 0,
+        "resultados": [],
+        "correos": [],
+        "telefonos": [],
+        "lat": 13.6912,
+        "lng": -89.2156
+    },
+    "UTLA": {
+        "siglas": "UTLA",
+        "nombre": "Universidad Técnica Latinoamericana",
+        "paginas_visitadas": 1,
+        "coincidencias": 6,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.utla.edu.sv/",
+                "titulo": "Universidad Técnica Latinoamericana – ¡Hacia el desarrollo a través de la formación integral!"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.utla.edu.sv/",
+                "titulo": "Universidad Técnica Latinoamericana – ¡Hacia el desarrollo a través de la formación integral!"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.utla.edu.sv/",
+                "titulo": "Universidad Técnica Latinoamericana – ¡Hacia el desarrollo a través de la formación integral!"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.utla.edu.sv/",
+                "titulo": "Universidad Técnica Latinoamericana – ¡Hacia el desarrollo a través de la formación integral!"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.utla.edu.sv/",
+                "titulo": "Universidad Técnica Latinoamericana – ¡Hacia el desarrollo a través de la formación integral!"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.utla.edu.sv/",
+                "titulo": "Universidad Técnica Latinoamericana – ¡Hacia el desarrollo a través de la formación integral!"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2026-2030",
+            "+503 2228-4775"
+        ],
+        "lat": 13.6745,
+        "lng": -89.289
+    },
+    "ITCA": {
+        "siglas": "ITCA",
+        "nombre": "Escuela Especializada en Ingeniería ITCA-FEPADE",
+        "paginas_visitadas": 3,
+        "coincidencias": 13,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.itca.edu.sv/",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.itca.edu.sv/",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.itca.edu.sv/",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.itca.edu.sv/",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.itca.edu.sv",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.itca.edu.sv",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.itca.edu.sv",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.itca.edu.sv",
+                "titulo": "ITCA Fepade | Escuela Especializada en Ingeniería"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.itca.edu.sv/quienes-somos/",
+                "titulo": "Quiénes Somos | ITCA Fepade"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.itca.edu.sv/quienes-somos/",
+                "titulo": "Quiénes Somos | ITCA Fepade"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.itca.edu.sv/quienes-somos/",
+                "titulo": "Quiénes Somos | ITCA Fepade"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.itca.edu.sv/quienes-somos/",
+                "titulo": "Quiénes Somos | ITCA Fepade"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.itca.edu.sv/quienes-somos/",
+                "titulo": "Quiénes Somos | ITCA Fepade"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "+503 2132-7400"
+        ],
+        "lat": 13.7101,
+        "lng": -89.1812
+    },
+    "UNSSA": {
+        "siglas": "UNSSA",
+        "nombre": "Universidad Nueva San Salvador",
+        "paginas_visitadas": 1,
+        "coincidencias": 0,
+        "resultados": [],
+        "correos": [],
+        "telefonos": [],
+        "lat": 13.6734,
+        "lng": -89.2876
+    },
+    "USO": {
+        "siglas": "USO",
+        "nombre": "Universidad de Sonsonate",
+        "paginas_visitadas": 3,
+        "coincidencias": 13,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.usonsonate.edu.sv/",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.usonsonate.edu.sv/institucion",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.usonsonate.edu.sv/institucion",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.usonsonate.edu.sv/servicios",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.usonsonate.edu.sv/servicios",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.usonsonate.edu.sv/servicios",
+                "titulo": "Universidad de Sonsonate | Recorriendo el camino hacia la Excelencia"
+            }
+        ],
+        "correos": [
+            "zib.garzona@usonsonate.edu.sv"
+        ],
+        "telefonos": [
+            "2429 9526",
+            "2429 9500",
+            "2429 9525",
+            "2429-9524",
+            "2429 9503"
+        ],
+        "lat": 13.7189,
+        "lng": -89.7239
+    },
+    "UNICO": {
+        "siglas": "UNICO",
+        "nombre": "Universidad de El Salvador Occidente",
+        "paginas_visitadas": 1,
+        "coincidencias": 0,
+        "resultados": [],
+        "correos": [],
+        "telefonos": [],
+        "lat": 13.9894,
+        "lng": -89.553
+    },
+    "UNASA": {
+        "siglas": "UNASA",
+        "nombre": "Universidad Autónoma de Santa Ana",
+        "paginas_visitadas": 3,
+        "coincidencias": 9,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.unasa.edu.sv/",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.unasa.edu.sv/",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.unasa.edu.sv/",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.unasa.edu.sv/weareunasa.html",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.unasa.edu.sv/weareunasa.html",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.unasa.edu.sv/ultimasnoticias.html",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.unasa.edu.sv/ultimasnoticias.html",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.unasa.edu.sv/ultimasnoticias.html",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.unasa.edu.sv/ultimasnoticias.html",
+                "titulo": "UNASA - UNIVERSIDAD AUTÃNOMA DE SANTA ANA"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2440 0245"
+        ],
+        "lat": 13.9958,
+        "lng": -89.5596
+    },
+    "ESEN": {
+        "siglas": "ESEN",
+        "nombre": "Escuela Superior de Economía y Negocios",
+        "paginas_visitadas": 3,
+        "coincidencias": 14,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.esen.edu.sv/",
+                "titulo": "Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.esen.edu.sv/",
+                "titulo": "Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.esen.edu.sv/",
+                "titulo": "Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.esen.edu.sv/",
+                "titulo": "Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.esen.edu.sv/postulacion-2/",
+                "titulo": "Postulación – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.esen.edu.sv/postulacion-2/",
+                "titulo": "Postulación – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.esen.edu.sv/postulacion-2/",
+                "titulo": "Postulación – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.esen.edu.sv/postulacion-2/",
+                "titulo": "Postulación – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.esen.edu.sv/postulacion-2/",
+                "titulo": "Postulación – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.esen.edu.sv/postulacion-2/",
+                "titulo": "Postulación – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "carrera",
+                "url": "https://www.esen.edu.sv/estudiantes/",
+                "titulo": "Estudiantes – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.esen.edu.sv/estudiantes/",
+                "titulo": "Estudiantes – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.esen.edu.sv/estudiantes/",
+                "titulo": "Estudiantes – Escuela Superior de Economía y Negocios"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.esen.edu.sv/estudiantes/",
+                "titulo": "Estudiantes – Escuela Superior de Economía y Negocios"
+            }
+        ],
+        "correos": [
+            "admision@esen.edu.sv"
+        ],
+        "telefonos": [
+            "2234-9292",
+            "7540-3977"
+        ],
+        "lat": 13.6812,
+        "lng": -89.2445
+    },
+    "UCAD": {
+        "siglas": "UCAD",
+        "nombre": "Universidad Católica de El Salvador",
+        "paginas_visitadas": 1,
+        "coincidencias": 7,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.ucad.edu.sv/",
+                "titulo": "UCAD"
+            }
+        ],
+        "correos": [
+            "informacion@ucad.edu.sv"
+        ],
+        "telefonos": [],
+        "lat": 13.8956,
+        "lng": -89.659
+    },
+    "UNICAES": {
+        "siglas": "UNICAES",
+        "nombre": "Universidad Católica de El Salvador Santa Ana",
+        "paginas_visitadas": 1,
+        "coincidencias": 0,
+        "resultados": [],
+        "correos": [],
+        "telefonos": [],
+        "lat": 13.9978,
+        "lng": -89.5601
+    }
+}

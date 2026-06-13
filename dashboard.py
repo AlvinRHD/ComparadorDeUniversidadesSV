@@ -631,7 +631,7 @@ with tab7:
             st.caption("Sin correos registrados.")
 
     with col_telefonos:
-        st.markdown("#### 📞 Teléfonos")
+        st.markdown("#### Teléfonos")
         if os.path.exists(ruta_contacto):
             telefonos = contactos.get("telefonos", [])
         else:
@@ -642,7 +642,7 @@ with tab7:
                 st.markdown(
                     f'<span style="background:#f0fdf4;color:#15803d;padding:4px 10px;'
                     f'border-radius:20px;font-size:0.85rem;display:inline-block;margin:3px">'
-                    f'📞 {t}</span>',
+                    f' {t}</span>',
                     unsafe_allow_html=True
                 )
         else:

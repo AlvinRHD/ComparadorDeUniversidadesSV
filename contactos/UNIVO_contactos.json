@@ -1,0 +1,15 @@
+{
+    "universidad": "Universidad de Oriente",
+    "siglas": "UNIVO",
+    "correos": [
+        "efpunivo@univo.edu.sv",
+        "admisiones@univo.edu.sv",
+        "info@email.com",
+        "info@univo.edu.sv"
+    ],
+    "telefonos": [
+        "2661-8882",
+        "+503 2668-3700",
+        "2661-8207"
+    ]
+}

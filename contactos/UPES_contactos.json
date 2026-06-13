@@ -1,0 +1,14 @@
+{
+    "universidad": "Universidad Politécnica de El Salvador",
+    "siglas": "UPES",
+    "correos": [
+        "atencionalestudiante@upes.edu.sv",
+        "info@upes.edu.sv",
+        "nuevoingreso@upes.edu.sv"
+    ],
+    "telefonos": [
+        "+503 2231 8800",
+        "+503 2231-8820",
+        "+503 2231-8817"
+    ]
+}
