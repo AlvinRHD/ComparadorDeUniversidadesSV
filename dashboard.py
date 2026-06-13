@@ -125,7 +125,7 @@ if st.sidebar.button("🕷️ Ejecutar crawler.py", use_container_width=True):
                 "📋 Log del crawler:",
                 value=log_acumulado,
                 height=300
-                # sin key → Streamlit lo maneja solo porque usamos .empty()
+                # sin key -> Streamlit lo maneja solo porque usamos .empty()
             )
 
         proceso.wait()              # esperamos a que termine formalmente
@@ -475,7 +475,7 @@ with tab6:
 
     **Flujo:**
     ```
-    python crawler.py  →  resultados/  imagenes_descargadas/  contactos/  MySQL
+    python crawler.py  ->  resultados/  imagenes_descargadas/  contactos/  MySQL
     streamlit run dashboard.py
     ```
     """)
@@ -595,7 +595,7 @@ with tab7:
     uni_arch = st.selectbox(
         "Seleccioná una universidad:",
         unis_disponibles,
-        format_func=lambda s: f"{s} — {datos[s]['nombre']}",
+        format_func=lambda s: f"{s} - {datos[s]['nombre']}",
         key="sel_archivos"
     )
 
