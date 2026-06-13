@@ -17,9 +17,9 @@ from urllib.parse import urljoin, urlparse
 from datetime import datetime
 from database import conectar, insertar_universidad, cerrar
 
-# ═══════════════════════════════════════════════════════════════════
+# --------------------------------═══
 #  MAPEO DE REQUISITOS - crawler.py
-# ═══════════════════════════════════════════════════════════════════
+# --------------------------------═══
 # 🕷️ CRAWLER AUTOMÁTICO (obligatorio) -> función crawlear_universidad()
 #     OK Inicia desde una URL principal      -> url_inicial = info["url"]
 #     OK Navega enlaces internos              -> bucle "Recolectar enlaces internos"
@@ -44,7 +44,7 @@ from database import conectar, insertar_universidad, cerrar
 #     OK Conexiones fallidas / URLs inválidas -> try/except Exception en crawlear_universidad()
 #     OK Páginas inexistentes (HTTP != 200)   -> chequeo resp.status_code != 200
 #     OK Datos vacíos                          -> sets/listas vacías por defecto, dashboard valida con .empty
-# ═══════════════════════════════════════════════════════════════════
+# --------------------------------═══
 
 # ----------------------─
 # UNIVERSIDADES DE EL SALVADOR (26 autorizadas)
@@ -103,7 +103,7 @@ PALABRAS_CLAVE = [
     "maestría", "maestria", "técnico", "tecnico",
     "licenciatura", "pregrado", "posgrado",
     "administración", "administracion", "derecho",
-    "medicina", "arquitectura", "computación", "computacion"
+    "medicina", "arquitectura", "computación", "computacion", "desarrollo de software"
 ]
 NORMALIZACIONES = {
     "ingenieria": "ingeniería", "maestria": "maestría",
@@ -162,7 +162,7 @@ def descargar_imagenes(soup, url_base, siglas):
             continue
 
     if descargadas:
-        print(f"    📷 {descargadas} imágenes guardadas en {carpeta}/")
+        print(f"    {descargadas} imágenes guardadas en {carpeta}/")
 
 
 def guardar_contactos(siglas, nombre, correos, telefonos):
@@ -191,7 +191,7 @@ def crawlear_universidad(siglas, info):
     dominio     = urlparse(url_inicial).netloc
     nombre      = info["nombre"]
 
-    # 🕷️ REQUISITO Crawler: "Evita URLs repetidas"
+    # REQUISITO Crawler: "Evita URLs repetidas"
     #     -> visitadas guarda lo ya recorrido, pendientes es la cola de URLs a visitar
     visitadas  = set()
     pendientes = [url_inicial]

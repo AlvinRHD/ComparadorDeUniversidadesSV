@@ -8,9 +8,9 @@ Descripción: Conexión a MySQL, creación automática de BD y tabla,
 import mysql.connector
 from mysql.connector import Error
 
-# ═══════════════════════════════════════════════════════════════
+# ------------------------------------------------═══
 #  MAPEO DE REQUISITOS - database.py
-# ═══════════════════════════════════════════════════════════════
+# ------------------------------------------------═══
 # start EXTRA (puntos opcionales): Almacenamiento en base de datos MySQL
 #     -> conectar()            : crea la BD y la tabla si no existen
 #     -> insertar_universidad(): guarda un registro por universidad
@@ -20,7 +20,7 @@ from mysql.connector import Error
 #     -> Conexiones fallidas a MySQL  -> try/except en conectar()
 #     -> Inserciones fallidas / datos vacíos -> try/except en
 #        insertar_universidad() (usa .get() y listas vacías por defecto)
-# ═══════════════════════════════════════════════════════════════
+# ------------------------------------------------═══
 
 # ----------------------─
 # CONFIGURACIÓN DE CONEXIÓN

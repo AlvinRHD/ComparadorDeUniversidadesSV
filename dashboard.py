@@ -19,9 +19,9 @@ from reportlab.lib import colors
 from reportlab.lib.units import inch
 from datetime import datetime
 
-# ═══════════════════════════════════════════════════════════════════
+# --------------------------------═══
 #  MAPEO DE REQUISITOS - dashboard.py
-# ═══════════════════════════════════════════════════════════════════
+# --------------------------------═══
 #  ALMACENAMIENTO (obligatorio):
 #     OK DataFrame de pandas -> sección "DATAFRAMES" (df_resumen, df_detalle)
 #
@@ -48,13 +48,13 @@ from datetime import datetime
 #     OK Comparación entre sitios -> TAB 5 (compara 2 universidades)
 #     OK Exportación a PDF      -> TAB 6 (reportlab)
 #     ERROR Análisis de sentimientos -> NO implementado todavía
-# ═══════════════════════════════════════════════════════════════════
+# --------------------------------═══
 
 # ----------------------─
 # CONFIGURACIÓN
 # ----------------------─
 
-st.set_page_config(page_title="Universidades El Salvador", page_icon="🎓", layout="wide")
+st.set_page_config(page_title="Universidades El Salvador", page_icon="", layout="wide")
 st.title(" Comparador de Universidades - El Salvador")
 st.caption("Web Scraping + Minería de Datos | Proyecto Final BD")
 
@@ -73,21 +73,21 @@ if not archivos:
 # SIDEBAR
 # ----------------------─
 
-st.sidebar.header("📂 Datos")
+st.sidebar.header("Datos")
 archivo_sel = st.sidebar.selectbox("Seleccioná un resultado:", archivos, index=0)
 st.sidebar.caption(f"`{archivo_sel}`")
 
-# ──────────────────────────────────────
+# ---------──
 #  BOTÓN EJECUTAR CRAWLER (sidebar)
 # Se agrega aquí porque el sidebar ya muestra los JSON disponibles,
 # y el botón queda naturalmente "debajo de los resultados".
-# ──────────────────────────────────────
+# ---------──
 import subprocess  # ← Agregar este import arriba junto a los demás imports del archivo
 
 st.sidebar.divider()
-st.sidebar.markdown("### ⚙️ Actualizar datos")
+st.sidebar.markdown("### Actualizar datos")
 
-if st.sidebar.button("🕷️ Ejecutar crawler.py", use_container_width=True):
+if st.sidebar.button("Ejecutar crawler.py", use_container_width=True):
     # Contenedor donde irán apareciendo los mensajes de progreso en vivo
     log_box = st.sidebar.empty()
 
@@ -122,7 +122,7 @@ if st.sidebar.button("🕷️ Ejecutar crawler.py", use_container_width=True):
 
             # Actualizamos el mismo cuadro de texto en lugar de agregar líneas nuevas
             log_box.text_area(
-                "📋 Log del crawler:",
+                "Log del crawler:",
                 value=log_acumulado,
                 height=300
                 # sin key -> Streamlit lo maneja solo porque usamos .empty()
@@ -192,14 +192,14 @@ st.divider()
 # PESTAÑAS
 # ----------------------─
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     " Resumen", " Minería de Datos", " Nube de palabras",
-    "Mapa", " Comparación", " Acerca de", "Archivos"
+    "Mapa", " Comparación", " Acerca de", "Archivos", "Buscador..."
 ])
 
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 1 - RESUMEN
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab1:
     # Tabla de resultados (requisito visualización)
@@ -241,9 +241,9 @@ with tab1:
     st.plotly_chart(fig3, width="stretch")
 
 
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 2 - MINERÍA DE DATOS
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab2:
     st.subheader(" Minería de Datos - Análisis académico")
@@ -318,9 +318,9 @@ with tab2:
                      width="stretch", hide_index=True)
 
 
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 3 - NUBE DE PALABRAS
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab3:
     # start REQUISITO EXTRA: Nube de palabras
@@ -359,9 +359,9 @@ with tab3:
             st.info("No hay palabras para esta selección.")
 
 
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 4 - MAPA
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab4:
     # start REQUISITO EXTRA: Geolocalización
@@ -391,9 +391,9 @@ with tab4:
     st.caption("Hacé clic en cada punto para ver el detalle.")
 
 
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 5 - COMPARACIÓN
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab5:
     # start REQUISITO EXTRA: Comparación entre sitios web (universidades)
@@ -449,9 +449,9 @@ with tab5:
             st.plotly_chart(fig_comp, width="stretch")
 
 
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 6 - ACERCA DE + EXPORTAR PDF
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab6:
     st.subheader(" Acerca del proyecto")
@@ -580,12 +580,12 @@ with tab6:
         st.download_button(" Descargar PDF", data=buffer,
                            file_name="reporte_universidades.pdf", mime="application/pdf")
         
-# ══════════════════════════════════════════════
+# --------------------------------
 # TAB 7 - IMÁGENES, CORREOS Y TELÉFONOS
-# ══════════════════════════════════════════════
+# --------------------------------
 
 with tab7:
-    st.subheader("📁 Archivos descargados por universidad")
+    st.subheader("Archivos descargados por universidad")
 
     CARPETA_IMAGENES  = "imagenes_descargadas"
     CARPETA_CONTACTOS = "contactos"
@@ -601,7 +601,7 @@ with tab7:
 
     st.divider()
 
-    # ── SECCIÓN 1: CONTACTOS ──────────────────────────────────────────
+    # ── SECCIÓN 1: CONTACTOS ----------──
 
     ruta_contacto = os.path.join(CARPETA_CONTACTOS, f"{uni_arch}_contactos.json")
 
@@ -650,7 +650,7 @@ with tab7:
 
     st.divider()
 
-    # ── SECCIÓN 2: IMÁGENES ───────────────────────────────────────────
+    # ── SECCIÓN 2: IMÁGENES -----------
 
     st.markdown("#### 🖼️ Imágenes descargadas")
 
@@ -686,3 +686,156 @@ with tab7:
                         except Exception:
                             #  Manejo de errores: imagen corrupta o ilegible
                             st.caption(f" {nombre_img} no se pudo mostrar")
+
+
+# --------------------------------
+# TAB 8 - BUSCADOR
+# Permite buscar términos académicos o nombres de carrera
+# y muestra resultados estilo Google: título + universidad + URL clickeable
+# --------------------------------
+
+with tab8:
+    st.subheader("Buscador de carreras y términos académicos")
+    st.caption("Buscá una carrera, término o palabra clave y encontrá qué universidades la mencionan en su sitio web.")
+
+    # ── Lista de palabras clave del crawler (mismas que en crawler.py)
+    # Se usan como filtros rápidos para que el usuario no tenga que escribir
+    PALABRAS_FILTRO = [
+        "carrera", "ingeniería", "facultad", "maestría",
+        "técnico", "licenciatura", "pregrado", "posgrado",
+        "administración", "derecho", "medicina",
+        "arquitectura", "computación"
+    ]
+
+    # ── FILA SUPERIOR: barra de búsqueda + filtros rápidos ---──
+    col_search, col_filtro = st.columns([3, 2])
+
+    with col_search:
+        # Campo de texto principal - el usuario escribe lo que busca
+        query = st.text_input(
+            "Buscar:",
+            placeholder="Ej: ingeniería, medicina, maestría en negocios...",
+            label_visibility="collapsed"
+        )
+
+    with col_filtro:
+        # Chips de filtro rápido: al seleccionar uno, se usa como búsqueda
+        # Si el usuario también escribió algo en el text_input, el chip lo sobreescribe
+        filtro_rapido = st.selectbox(
+            "O elegí un término:",
+            ["- Seleccioná un filtro -"] + PALABRAS_FILTRO,
+            label_visibility="collapsed"
+        )
+
+    # Determinamos el término final a buscar:
+    # prioridad -> lo que escribió el usuario; si está vacío, usamos el filtro
+    termino = query.strip()
+    if not termino and filtro_rapido != "- Seleccioná un filtro -":
+        termino = filtro_rapido
+
+    st.divider()
+
+    # ── LÓGICA DE BÚSQUEDA ------------
+    if not termino:
+        # Estado inicial: no se buscó nada todavía
+        st.info("Escribí algo en la barra o elegí un filtro rápido para empezar.")
+
+    else:
+        termino_lower = termino.lower()
+
+        # Recorremos el JSON completo buscando coincidencias en:
+        # 1) el campo "palabra" de cada resultado  (término académico detectado)
+        # 2) el campo "titulo" de la página        (título HTML de la página)
+        # Así si alguien busca "medicina" encuentra páginas aunque el término
+        # no sea exactamente una de las PALABRAS_CLAVE del crawler
+        resultados_busqueda = []
+
+        for siglas, d in datos.items():
+            nombre_uni = d["nombre"]
+            url_base   = next(
+                # Tomamos la URL del primer resultado como "URL principal" de la uni
+                (r["url"] for r in d["resultados"] if r["url"]),
+                "#"
+            )
+
+            for r in d["resultados"]:
+                # Revisamos si el término aparece en la palabra clave o en el título
+                palabra_ok = termino_lower in r["palabra"].lower()
+                titulo_ok  = termino_lower in r["titulo"].lower()
+
+                if palabra_ok or titulo_ok:
+                    resultados_busqueda.append({
+                        "siglas":      siglas,
+                        "universidad": nombre_uni,
+                        "palabra":     r["palabra"],
+                        "titulo":      r["titulo"],
+                        "url":         r["url"],
+                        "url_base":    url_base,
+                    })
+
+        # Eliminamos duplicados exactos (misma url + misma palabra)
+        vistos = set()
+        unicos = []
+        for res in resultados_busqueda:
+            llave = (res["url"], res["palabra"])
+            if llave not in vistos:
+                vistos.add(llave)
+                unicos.append(res)
+
+        # ── ENCABEZADO DE RESULTADOS (estilo Google) -----──
+        if not unicos:
+            # Manejo de errores: búsqueda sin resultados
+            st.warning(f"No se encontraron resultados para **\"{termino}\"**. "
+                       f"Intentá con otro término o ejecutá el crawler para actualizar los datos.")
+        else:
+            # Agrupamos por universidad para saber cuántas encontraron el término
+            unis_con_resultados = len(set(r["siglas"] for r in unicos))
+            st.success(f"**{len(unicos)} resultado(s)** en **{unis_con_resultados} universidad(es)** "
+                       f"para «{termino}»")
+
+            st.markdown("")  # pequeño espacio visual
+
+            # ── TARJETAS DE RESULTADO (una por coincidencia) ---──
+            for res in unicos:
+                # Contenedor con borde suave - simula tarjeta de resultado de búsqueda
+                with st.container(border=True):
+                    col_info, col_link = st.columns([5, 1])
+
+                    with col_info:
+                        # Línea 1: nombre de la universidad (como el "sitio" en Google)
+                        st.markdown(
+                            f'<span style="color:#6b7280;font-size:0.82rem;">'
+                            f'{res["universidad"]} &nbsp;·&nbsp; '
+                            f'<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">'
+                            f'{res["siglas"]}</code></span>',
+                            unsafe_allow_html=True
+                        )
+
+                        # Línea 2: título de la página (como el título azul clickeable en Google)
+                        titulo_mostrar = res["titulo"] if res["titulo"] else "Sin título"
+                        st.markdown(
+                            f'<a href="{res["url"]}" target="_blank" '
+                            f'style="font-size:1.05rem;font-weight:600;color:#1d4ed8;'
+                            f'text-decoration:none;">{titulo_mostrar}</a>',
+                            unsafe_allow_html=True
+                        )
+
+                        # Línea 3: URL visible (como la URL verde en Google)
+                        st.markdown(
+                            f'<span style="color:#16a34a;font-size:0.78rem;">{res["url"]}</span>',
+                            unsafe_allow_html=True
+                        )
+
+                        # Línea 4: etiqueta de término académico detectado
+                        st.markdown(
+                            f'<span style="background:#eff6ff;color:#1e40af;padding:2px 8px;'
+                            f'border-radius:12px;font-size:0.78rem;">🏷️ {res["palabra"]}</span>',
+                            unsafe_allow_html=True
+                        )
+
+                    with col_link:
+                        # Botón para abrir la página directamente
+                        # Abre en pestaña nueva para no salir del dashboard
+                        st.link_button("Visitar", res["url"], use_container_width=True)
+
+                st.markdown("")  # separador visual entre tarjetas
