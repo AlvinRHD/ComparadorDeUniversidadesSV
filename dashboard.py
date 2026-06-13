@@ -829,7 +829,7 @@ with tab8:
                         # Línea 4: etiqueta de término académico detectado
                         st.markdown(
                             f'<span style="background:#eff6ff;color:#1e40af;padding:2px 8px;'
-                            f'border-radius:12px;font-size:0.78rem;">🏷️ {res["palabra"]}</span>',
+                            f'border-radius:12px;font-size:0.78rem;"> {res["palabra"]}</span>',
                             unsafe_allow_html=True
                         )
 
