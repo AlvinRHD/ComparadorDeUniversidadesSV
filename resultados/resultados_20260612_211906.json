@@ -1,0 +1,252 @@
+{
+    "UES": {
+        "siglas": "UES",
+        "nombre": "Universidad de El Salvador",
+        "paginas_visitadas": 1,
+        "coincidencias": 8,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "medicina",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.ues.edu.sv/",
+                "titulo": "Universidad de El Salvador"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2021\n2026",
+            "2511-2000"
+        ],
+        "lat": 13.7176,
+        "lng": -89.2016
+    },
+    "UDB": {
+        "siglas": "UDB",
+        "nombre": "Universidad Don Bosco",
+        "paginas_visitadas": 1,
+        "coincidencias": 7,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.udb.edu.sv/",
+                "titulo": "Universidad Don Bosco © | Inicio"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2527-2300",
+            "2251-8200",
+            "7989-1377"
+        ],
+        "lat": 13.708,
+        "lng": -89.173
+    },
+    "UCA": {
+        "siglas": "UCA",
+        "nombre": "Universidad Centroamericana José Simeón Cañas",
+        "paginas_visitadas": 1,
+        "coincidencias": 4,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "posgrado",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.uca.edu.sv/",
+                "titulo": "Universidad Centroamericana José Simeón Cañas"
+            }
+        ],
+        "correos": [
+            "direccion.comunicaciones@uca.edu.sv"
+        ],
+        "telefonos": [
+            "2210-6600"
+        ],
+        "lat": 13.6763,
+        "lng": -89.2389
+    },
+    "UTEC": {
+        "siglas": "UTEC",
+        "nombre": "Universidad Tecnológica de El Salvador",
+        "paginas_visitadas": 1,
+        "coincidencias": 11,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "ingeniería",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "facultad",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "maestría",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "técnico",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "licenciatura",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "administración",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "arquitectura",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            },
+            {
+                "palabra": "computación",
+                "url": "https://www.utec.edu.sv/",
+                "titulo": "Universidad Tecnológica de El Salvador"
+            }
+        ],
+        "correos": [],
+        "telefonos": [
+            "2275-7566",
+            "6420-4295",
+            "2275-2700",
+            "2275-8888",
+            "2261-0270",
+            "6100-0777"
+        ],
+        "lat": 13.6986,
+        "lng": -89.191
+    },
+    "UFG": {
+        "siglas": "UFG",
+        "nombre": "Universidad Francisco Gavidia",
+        "paginas_visitadas": 1,
+        "coincidencias": 3,
+        "resultados": [
+            {
+                "palabra": "carrera",
+                "url": "https://www.ufg.edu.sv/",
+                "titulo": "Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "pregrado",
+                "url": "https://www.ufg.edu.sv/",
+                "titulo": "Universidad Francisco Gavidia El Salvador"
+            },
+            {
+                "palabra": "derecho",
+                "url": "https://www.ufg.edu.sv/",
+                "titulo": "Universidad Francisco Gavidia El Salvador"
+            }
+        ],
+        "correos": [
+            "dobletitulacion@ufg.edu.sv",
+            "admisiones@ufg.edu.sv"
+        ],
+        "telefonos": [
+            "7291-2036",
+            "2209-2837",
+            "2209-2834"
+        ],
+        "lat": 13.6994,
+        "lng": -89.1914
+    }
+}

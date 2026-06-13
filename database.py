@@ -9,14 +9,14 @@ import mysql.connector
 from mysql.connector import Error
 
 # ═══════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS - database.py
+#  MAPEO DE REQUISITOS - database.py
 # ═══════════════════════════════════════════════════════════════
-# ⭐ EXTRA (puntos opcionales): Almacenamiento en base de datos MySQL
+# start EXTRA (puntos opcionales): Almacenamiento en base de datos MySQL
 #     -> conectar()            : crea la BD y la tabla si no existen
 #     -> insertar_universidad(): guarda un registro por universidad
 #     -> cerrar()              : cierra la conexión
 #
-# ⚠️ Manejo de errores (obligatorio):
+# alert Manejo de errores (obligatorio):
 #     -> Conexiones fallidas a MySQL  -> try/except en conectar()
 #     -> Inserciones fallidas / datos vacíos -> try/except en
 #        insertar_universidad() (usa .get() y listas vacías por defecto)
@@ -80,7 +80,7 @@ def conectar():
         return conn
 
     except Error as e:
-        # ⚠️ REQUISITO: manejo de errores -> conexión fallida a MySQL
+        # alert REQUISITO: manejo de errores -> conexión fallida a MySQL
         print(f"  [DB ERROR] No se pudo conectar a MySQL: {e}")
         return None
 
@@ -137,7 +137,7 @@ def insertar_universidad(conn, siglas, data, correos, telefonos, coordenadas):
         print(f"  [DB] Guardado: {data['nombre']}")
 
     except Error as e:
-        # ⚠️ REQUISITO: manejo de errores -> fallo al insertar en MySQL
+        # alert REQUISITO: manejo de errores -> fallo al insertar en MySQL
         print(f"  [DB ERROR] Al insertar {siglas}: {e}")
 
 

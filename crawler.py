@@ -18,32 +18,32 @@ from datetime import datetime
 from database import conectar, insertar_universidad, cerrar
 
 # ═══════════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS - crawler.py
+#  MAPEO DE REQUISITOS - crawler.py
 # ═══════════════════════════════════════════════════════════════════
 # 🕷️ CRAWLER AUTOMÁTICO (obligatorio) -> función crawlear_universidad()
-#     ✅ Inicia desde una URL principal      -> url_inicial = info["url"]
-#     ✅ Navega enlaces internos              -> bucle "Recolectar enlaces internos"
-#     ✅ Evita URLs repetidas                 -> set "visitadas" + chequeo en "pendientes"
-#     ✅ Limita páginas visitadas             -> MAX_PAGINAS / while len(visitadas) < MAX_PAGINAS
-#     ✅ Maneja errores de conexión           -> try/except + chequeo status_code
-#     ✅ Muestra progreso en consola          -> prints "[OK] Visitando..." / "Enlaces encontrados"
+#     OK Inicia desde una URL principal      -> url_inicial = info["url"]
+#     OK Navega enlaces internos              -> bucle "Recolectar enlaces internos"
+#     OK Evita URLs repetidas                 -> set "visitadas" + chequeo en "pendientes"
+#     OK Limita páginas visitadas             -> MAX_PAGINAS / while len(visitadas) < MAX_PAGINAS
+#     OK Maneja errores de conexión           -> try/except + chequeo status_code
+#     OK Muestra progreso en consola          -> prints "[OK] Visitando..." / "Enlaces encontrados"
 #
-# 📄 WEB SCRAPING (obligatorio, mínimo 3 tipos -> aquí hay 5):
-#     ✅ Títulos       -> soup.title (dentro del bucle de palabras clave)
-#     ✅ Correos       -> extraer_correos()
-#     ✅ Teléfonos     -> extraer_telefonos()
-#     ✅ Imágenes      -> descargar_imagenes()
-#     ✅ Enlaces       -> recolección de <a href> internos
+#  WEB SCRAPING (obligatorio, mínimo 3 tipos -> aquí hay 5):
+#     OK Títulos       -> soup.title (dentro del bucle de palabras clave)
+#     OK Correos       -> extraer_correos()
+#     OK Teléfonos     -> extraer_telefonos()
+#     OK Imágenes      -> descargar_imagenes()
+#     OK Enlaces       -> recolección de <a href> internos
 #
-# 💾 ALMACENAMIENTO (obligatorio):
-#     ✅ JSON con timestamp -> bloque MAIN, json.dump(comparacion, ...)
-#     ✅ DataFrame de pandas -> se construye en dashboard.py a partir de este JSON
-#     ⭐ MySQL (extra)       -> insertar_universidad() en bloque MAIN
+#  ALMACENAMIENTO (obligatorio):
+#     OK JSON con timestamp -> bloque MAIN, json.dump(comparacion, ...)
+#     OK DataFrame de pandas -> se construye en dashboard.py a partir de este JSON
+#     start MySQL (extra)       -> insertar_universidad() en bloque MAIN
 #
-# ⚠️ MANEJO DE ERRORES (obligatorio):
-#     ✅ Conexiones fallidas / URLs inválidas -> try/except Exception en crawlear_universidad()
-#     ✅ Páginas inexistentes (HTTP != 200)   -> chequeo resp.status_code != 200
-#     ✅ Datos vacíos                          -> sets/listas vacías por defecto, dashboard valida con .empty
+# alert MANEJO DE ERRORES (obligatorio):
+#     OK Conexiones fallidas / URLs inválidas -> try/except Exception en crawlear_universidad()
+#     OK Páginas inexistentes (HTTP != 200)   -> chequeo resp.status_code != 200
+#     OK Datos vacíos                          -> sets/listas vacías por defecto, dashboard valida con .empty
 # ═══════════════════════════════════════════════════════════════════
 
 # ----------------------─
@@ -121,7 +121,7 @@ FORMATOS_IMG = {".jpg", ".jpeg", ".png", ".webp"}
 
 def extraer_correos(html, soup):
     """Extrae correos del HTML y atributos mailto."""
-    # 📄 REQUISITO Web Scraping: extracción de correos (tipo de dato #1)
+    #  REQUISITO Web Scraping: extracción de correos (tipo de dato #1)
     correos = set(RE_EMAIL.findall(html))
     for a in soup.find_all("a", href=True):
         if a["href"].startswith("mailto:"):
@@ -132,13 +132,13 @@ def extraer_correos(html, soup):
 
 def extraer_telefonos(texto):
     """Extrae teléfonos con formato salvadoreño."""
-    # 📄 REQUISITO Web Scraping: extracción de teléfonos (tipo de dato #2)
+    #  REQUISITO Web Scraping: extracción de teléfonos (tipo de dato #2)
     return list(set(RE_PHONE.findall(texto)))
 
 
 def descargar_imagenes(soup, url_base, siglas):
     """Descarga las primeras 10 imágenes válidas (PNG/JPG/WEBP)."""
-    # 📄 REQUISITO Web Scraping: extracción/descarga de imágenes (tipo de dato #3)
+    #  REQUISITO Web Scraping: extracción/descarga de imágenes (tipo de dato #3)
     carpeta = os.path.join(CARPETA_IMAGENES, siglas)
     os.makedirs(carpeta, exist_ok=True)
 
@@ -177,7 +177,7 @@ def guardar_contactos(siglas, nombre, correos, telefonos):
     ruta = os.path.join(CARPETA_CONTACTOS, f"{siglas}_contactos.json")
     with open(ruta, "w", encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False, indent=4)
-    print(f"    📧 Contactos guardados en {ruta}")
+    print(f"    Contactos guardados en {ruta}")
 
 
 # ----------------------─
@@ -214,13 +214,13 @@ def crawlear_universidad(siglas, info):
         print(f"  [OK] Visitando página: {url_actual}")
         visitadas.add(url_actual)
 
-        try:  # ⚠️ REQUISITO: manejo de errores de conexión
+        try:  # alert REQUISITO: manejo de errores de conexión
             resp = requests.get(
                 url_actual, timeout=10,
                 headers={"User-Agent": "UniSVCrawler/1.0"}
             )
             if resp.status_code != 200:
-                # ⚠️ REQUISITO: manejo de "páginas inexistentes" (HTTP distinto de 200)
+                # alert REQUISITO: manejo de "páginas inexistentes" (HTTP distinto de 200)
                 print(f"       HTTP {resp.status_code} - omitida")
                 continue
 
@@ -235,12 +235,12 @@ def crawlear_universidad(siglas, info):
                     display = NORMALIZACIONES.get(palabra, palabra)
                     if display not in palabras_encontradas:
                         palabras_encontradas.add(display)
-                        # 📄 REQUISITO Web Scraping: extracción de TÍTULOS (tipo de dato #4)
+                        #  REQUISITO Web Scraping: extracción de TÍTULOS (tipo de dato #4)
                         titulo = soup.title.text.strip() if soup.title else ""
                         resultados.append({"palabra": display, "url": url_actual, "titulo": titulo})
 
             if palabras_encontradas:
-                print(f"       ✓ {', '.join(sorted(palabras_encontradas))}")
+                print(f"       {', '.join(sorted(palabras_encontradas))}")
 
             # Correos y teléfonos
             todos_correos.update(extraer_correos(resp.text, soup))
@@ -252,7 +252,7 @@ def crawlear_universidad(siglas, info):
                 imagenes_ok = True
 
             # 🕷️ REQUISITO Crawler: "Navega automáticamente por enlaces internos"
-            # 📄 REQUISITO Web Scraping: extracción de ENLACES (tipo de dato #5)
+            #  REQUISITO Web Scraping: extracción de ENLACES (tipo de dato #5)
             enlaces = soup.find_all("a", href=True)
             print(f"       [OK] Enlaces encontrados: {len(enlaces)}")  # progreso en consola
             for enlace in enlaces:
@@ -266,7 +266,7 @@ def crawlear_universidad(siglas, info):
                     pendientes.append(url_completa)
 
         except Exception as e:
-            # ⚠️ REQUISITO: manejo de errores de conexión / URLs inválidas
+            # alert REQUISITO: manejo de errores de conexión / URLs inválidas
             print(f"       Error: {e}")
 
         time.sleep(PAUSA)
@@ -318,7 +318,7 @@ if __name__ == "__main__":
         data = crawlear_universidad(siglas, info)
         comparacion[siglas] = data
 
-        # ⭐ REQUISITO EXTRA: Almacenamiento en base de datos MySQL
+        # start REQUISITO EXTRA: Almacenamiento en base de datos MySQL
         insertar_universidad(
             conn, siglas, data,
             data["correos"], data["telefonos"],
@@ -327,7 +327,7 @@ if __name__ == "__main__":
 
     cerrar(conn)
 
-    # 💾 REQUISITO: Almacenamiento de datos -> JSON con timestamp
+    #  REQUISITO: Almacenamiento de datos -> JSON con timestamp
     #     (a partir de este JSON, dashboard.py construye los DataFrames de pandas)
     os.makedirs(CARPETA_RESULTADOS, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

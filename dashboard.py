@@ -20,34 +20,34 @@ from reportlab.lib.units import inch
 from datetime import datetime
 
 # ═══════════════════════════════════════════════════════════════════
-# 📌 MAPEO DE REQUISITOS - dashboard.py
+#  MAPEO DE REQUISITOS - dashboard.py
 # ═══════════════════════════════════════════════════════════════════
-# 💾 ALMACENAMIENTO (obligatorio):
-#     ✅ DataFrame de pandas -> sección "DATAFRAMES" (df_resumen, df_detalle)
+#  ALMACENAMIENTO (obligatorio):
+#     OK DataFrame de pandas -> sección "DATAFRAMES" (df_resumen, df_detalle)
 #
-# 📊 MINERÍA DE DATOS (obligatorio) -> TAB 2 "Minería de Datos"
-#     ✅ Palabras más frecuentes  -> tabla "freq" + gráfica Top 10
-#     ✅ Categorías predominantes -> dataframe "predominantes"
-#     ✅ Tendencias encontradas   -> fig_tend (universidades con más presencia académica)
-#     ✅ Frecuencias              -> freq, heatmap "pivot"
+#  MINERÍA DE DATOS (obligatorio) -> TAB 2 "Minería de Datos"
+#     OK Palabras más frecuentes  -> tabla "freq" + gráfica Top 10
+#     OK Categorías predominantes -> dataframe "predominantes"
+#     OK Tendencias encontradas   -> fig_tend (universidades con más presencia académica)
+#     OK Frecuencias              -> freq, heatmap "pivot"
 #     (Precio prom/min/max no aplica: el proyecto es académico, no de precios)
 #
-# 📈 VISUALIZACIÓN (obligatorio, mínimo 3 -> aquí hay 4+):
-#     ✅ Gráfica de barras -> TAB 1 (fig, fig3) y TAB 2 (fig_top, fig_tend)
-#     ✅ Histograma        -> TAB 1 (fig2 - páginas visitadas)
-#     ✅ Tabla de resultados -> TAB 1 (st.dataframe df_resumen) y TAB 2 (df_f)
-#     ✅ Dashboard web     -> todo el archivo (streamlit run dashboard.py)
+#  VISUALIZACIÓN (obligatorio, mínimo 3 -> aquí hay 4+):
+#     OK Gráfica de barras -> TAB 1 (fig, fig3) y TAB 2 (fig_top, fig_tend)
+#     OK Histograma        -> TAB 1 (fig2 - páginas visitadas)
+#     OK Tabla de resultados -> TAB 1 (st.dataframe df_resumen) y TAB 2 (df_f)
+#     OK Dashboard web     -> todo el archivo (streamlit run dashboard.py)
 #
-# ⚠️ MANEJO DE ERRORES (obligatorio):
-#     ✅ Datos vacíos -> chequeos "if not os.path.exists", "if not archivos",
+# alert MANEJO DE ERRORES (obligatorio):
+#     OK Datos vacíos -> chequeos "if not os.path.exists", "if not archivos",
 #        "if df_detalle.empty" antes de graficar
 #
-# ⭐ EXTRAS (opcionales, puntos adicionales):
-#     ✅ Nube de palabras       -> TAB 3
-#     ✅ Geolocalización (mapa) -> TAB 4 (folium + streamlit_folium)
-#     ✅ Comparación entre sitios -> TAB 5 (compara 2 universidades)
-#     ✅ Exportación a PDF      -> TAB 6 (reportlab)
-#     ❌ Análisis de sentimientos -> NO implementado todavía
+# start EXTRAS (opcionales, puntos adicionales):
+#     OK Nube de palabras       -> TAB 3
+#     OK Geolocalización (mapa) -> TAB 4 (folium + streamlit_folium)
+#     OK Comparación entre sitios -> TAB 5 (compara 2 universidades)
+#     OK Exportación a PDF      -> TAB 6 (reportlab)
+#     ERROR Análisis de sentimientos -> NO implementado todavía
 # ═══════════════════════════════════════════════════════════════════
 
 # ----------------------─
@@ -55,18 +55,18 @@ from datetime import datetime
 # ----------------------─
 
 st.set_page_config(page_title="Universidades El Salvador", page_icon="🎓", layout="wide")
-st.title("🎓 Comparador de Universidades - El Salvador")
+st.title(" Comparador de Universidades - El Salvador")
 st.caption("Web Scraping + Minería de Datos | Proyecto Final BD")
 
 CARPETA_RESULTADOS = "resultados"
 
 if not os.path.exists(CARPETA_RESULTADOS):
-    # ⚠️ REQUISITO: manejo de errores -> datos vacíos (carpeta de resultados inexistente)
+    # alert REQUISITO: manejo de errores -> datos vacíos (carpeta de resultados inexistente)
     st.error("No existe 'resultados/'. Ejecutá primero crawler.py"); st.stop()
 
 archivos = sorted([f for f in os.listdir(CARPETA_RESULTADOS) if f.endswith(".json")], reverse=True)
 if not archivos:
-    # ⚠️ REQUISITO: manejo de errores -> datos vacíos (sin archivos JSON)
+    # alert REQUISITO: manejo de errores -> datos vacíos (sin archivos JSON)
     st.error("No hay archivos JSON. Ejecutá primero crawler.py"); st.stop()
 
 # ----------------------─
@@ -77,11 +77,77 @@ st.sidebar.header("📂 Datos")
 archivo_sel = st.sidebar.selectbox("Seleccioná un resultado:", archivos, index=0)
 st.sidebar.caption(f"`{archivo_sel}`")
 
+# ──────────────────────────────────────
+#  BOTÓN EJECUTAR CRAWLER (sidebar)
+# Se agrega aquí porque el sidebar ya muestra los JSON disponibles,
+# y el botón queda naturalmente "debajo de los resultados".
+# ──────────────────────────────────────
+import subprocess  # ← Agregar este import arriba junto a los demás imports del archivo
+
+st.sidebar.divider()
+st.sidebar.markdown("### ⚙️ Actualizar datos")
+
+if st.sidebar.button("🕷️ Ejecutar crawler.py", use_container_width=True):
+    # Contenedor donde irán apareciendo los mensajes de progreso en vivo
+    log_box = st.sidebar.empty()
+
+    try:
+        # subprocess.Popen ejecuta crawler.py como proceso aparte.
+        # stdout=PIPE captura lo que normalmente saldría en consola.
+        # stderr=STDOUT mezcla errores en el mismo canal para no perderlos.
+        # text=True hace que las líneas lleguen como string (no bytes).
+        proceso = subprocess.Popen(
+            ["python", "crawler.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            encoding="utf-8",
+            errors="replace"        # evita crash si hay carácter raro
+        )
+
+        log_acumulado = ""          # guardamos todo el log para mostrarlo completo
+
+        # Leemos línea a línea MIENTRAS el proceso sigue corriendo.
+        # Esto da el efecto "streaming" que permite ver el progreso en tiempo real.
+        for linea in proceso.stdout:
+            linea = linea.rstrip()
+            if not linea:
+                continue            # ignoramos líneas vacías
+
+            # Detectamos las líneas que mencionan universidades para mostrarlas bonito
+            if "[" in linea and "]" in linea:
+                log_acumulado += f"OK {linea}\n"
+            else:
+                log_acumulado += f"{linea}\n"
+
+            # Actualizamos el mismo cuadro de texto en lugar de agregar líneas nuevas
+            log_box.text_area(
+                "📋 Log del crawler:",
+                value=log_acumulado,
+                height=300
+                # sin key → Streamlit lo maneja solo porque usamos .empty()
+            )
+
+        proceso.wait()              # esperamos a que termine formalmente
+
+        # Mensaje final según el código de salida (0 = éxito, otro = error)
+        if proceso.returncode == 0:
+            st.sidebar.success("OK ¡Crawler finalizado! Recargá la página para ver los datos actualizados.")
+        else:
+            st.sidebar.error(f"ERROR El crawler terminó con errores (código {proceso.returncode}).")
+
+    except FileNotFoundError:
+        # alert Manejo de errores: crawler.py no existe en la carpeta actual
+        st.sidebar.error("ERROR No se encontró crawler.py. Asegurate de que esté en la misma carpeta.")
+    except Exception as e:
+        # alert Manejo de errores: cualquier fallo inesperado al lanzar el proceso
+        st.sidebar.error(f"ERROR Error al ejecutar el crawler: {e}")
+
 with open(os.path.join(CARPETA_RESULTADOS, archivo_sel), "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 # ----------------------─
-# 💾 DATAFRAMES (REQUISITO: almacenamiento en pandas)
+#  DATAFRAMES (REQUISITO: almacenamiento en pandas)
 # ----------------------─
 
 resumen = []
@@ -126,9 +192,9 @@ st.divider()
 # PESTAÑAS
 # ----------------------─
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "📊 Resumen", "📈 Minería de Datos", "☁️ Nube de palabras",
-    "🗺️ Mapa", "🔍 Comparación", "ℹ️ Acerca de"
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+    " Resumen", " Minería de Datos", " Nube de palabras",
+    "Mapa", " Comparación", " Acerca de", "Archivos"
 ])
 
 # ══════════════════════════════════════════════
@@ -137,7 +203,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 
 with tab1:
     # Tabla de resultados (requisito visualización)
-    st.subheader("📋 Tabla de resultados - DataFrame principal")
+    st.subheader(" Tabla de resultados - DataFrame principal")
     st.caption("Datos almacenados en pandas DataFrame y visualizados aquí")
     st.dataframe(
         df_resumen[["Siglas","Universidad","Páginas visitadas","Coincidencias","Correos","Teléfonos"]],
@@ -150,7 +216,7 @@ with tab1:
         # Gráfica de barras - coincidencias (requisito)
         fig = px.bar(df_resumen, x="Siglas", y="Coincidencias", color="Siglas",
                      text="Coincidencias",
-                     title="📊 Gráfica de barras - Palabras clave por universidad",
+                     title=" Gráfica de barras - Palabras clave por universidad",
                      labels={"Coincidencias": "Palabras clave encontradas"})
         fig.update_traces(textposition="outside")
         fig.update_layout(showlegend=False, xaxis_title="Universidad", yaxis_title="Cantidad")
@@ -159,7 +225,7 @@ with tab1:
     with col_b:
         # Histograma - páginas visitadas (requisito)
         fig2 = px.histogram(df_resumen, x="Páginas visitadas", nbins=5,
-                            title="📊 Histograma - Distribución de páginas visitadas",
+                            title=" Histograma - Distribución de páginas visitadas",
                             labels={"Páginas visitadas": "Páginas visitadas", "count": "Frecuencia"},
                             color_discrete_sequence=["#3b82f6"])
         fig2.update_layout(xaxis_title="Páginas visitadas", yaxis_title="Frecuencia")
@@ -169,7 +235,7 @@ with tab1:
     df_m = df_resumen.melt(id_vars="Siglas", value_vars=["Correos","Teléfonos"],
                             var_name="Tipo", value_name="Cantidad")
     fig3 = px.bar(df_m, x="Siglas", y="Cantidad", color="Tipo", barmode="group",
-                  title="📊 Correos y teléfonos encontrados por universidad",
+                  title=" Correos y teléfonos encontrados por universidad",
                   labels={"Cantidad": "Cantidad encontrada", "Siglas": "Universidad"})
     fig3.update_layout(xaxis_title="Universidad", yaxis_title="Cantidad")
     st.plotly_chart(fig3, width="stretch")
@@ -180,10 +246,10 @@ with tab1:
 # ══════════════════════════════════════════════
 
 with tab2:
-    st.subheader("📈 Minería de Datos - Análisis académico")
+    st.subheader(" Minería de Datos - Análisis académico")
 
     if df_detalle.empty:
-        # ⚠️ REQUISITO: manejo de errores -> datos vacíos
+        # alert REQUISITO: manejo de errores -> datos vacíos
         st.warning("No hay datos.")
     else:
         # - Análisis de frecuencias -
@@ -192,10 +258,10 @@ with tab2:
         # Estadísticas tipo minería (máximo, mínimo, promedio, tendencia)
         st.markdown("#### 🔢 Estadísticas de frecuencia de términos académicos")
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("📈 Término más frecuente",  f"{freq.iloc[0]['Palabra']} ({freq.iloc[0]['Frecuencia']})")
-        m2.metric("📉 Término menos frecuente", f"{freq.iloc[-1]['Palabra']} ({freq.iloc[-1]['Frecuencia']})")
-        m3.metric("📊 Frecuencia promedio",     f"{freq['Frecuencia'].mean():.1f}")
-        m4.metric("🔢 Total términos únicos",   len(freq))
+        m1.metric(" Término más frecuente",  f"{freq.iloc[0]['Palabra']} ({freq.iloc[0]['Frecuencia']})")
+        m2.metric(" Término menos frecuente", f"{freq.iloc[-1]['Palabra']} ({freq.iloc[-1]['Frecuencia']})")
+        m3.metric(" Frecuencia promedio",     f"{freq['Frecuencia'].mean():.1f}")
+        m4.metric(" Total términos únicos",   len(freq))
 
         st.divider()
 
@@ -203,7 +269,7 @@ with tab2:
         with col_a:
             # Top 10 palabras
             fig_top = px.bar(freq.head(10), x="Frecuencia", y="Palabra", orientation="h",
-                             title="📝 Top 10 - Términos académicos más frecuentes",
+                             title=" Top 10 - Términos académicos más frecuentes",
                              labels={"Frecuencia": "Veces encontrado", "Palabra": "Término"},
                              color="Frecuencia", color_continuous_scale="Blues")
             fig_top.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
@@ -211,7 +277,7 @@ with tab2:
 
         with col_b:
             # Categorías predominantes por universidad
-            st.markdown("#### 🏷️ Categoría predominante por universidad")
+            st.markdown("####  Categoría predominante por universidad")
             predominantes = (
                 df_detalle.groupby(["Universidad","Palabra"]).size()
                 .reset_index(name="Frecuencia")
@@ -221,7 +287,7 @@ with tab2:
             )
             st.dataframe(predominantes, width="stretch", hide_index=True)
 
-            st.markdown("#### 📊 Tendencia - Universidades con más presencia académica")
+            st.markdown("####  Tendencia - Universidades con más presencia académica")
             fig_tend = px.bar(
                 df_resumen.sort_values("Coincidencias", ascending=False),
                 x="Siglas", y="Coincidencias",
@@ -238,7 +304,7 @@ with tab2:
         pivot = df_detalle.groupby(["Universidad","Palabra"]).size().reset_index(name="Frecuencia")
         fig_heat = px.density_heatmap(pivot, x="Universidad", y="Palabra", z="Frecuencia",
                                        color_continuous_scale="Blues",
-                                       title="📊 Distribución de términos académicos por universidad")
+                                       title=" Distribución de términos académicos por universidad")
         fig_heat.update_layout(xaxis_title="Universidad", yaxis_title="Término académico")
         st.plotly_chart(fig_heat, width="stretch")
 
@@ -257,11 +323,11 @@ with tab2:
 # ══════════════════════════════════════════════
 
 with tab3:
-    # ⭐ REQUISITO EXTRA: Nube de palabras
-    st.subheader("☁️ Nube de palabras")
+    # start REQUISITO EXTRA: Nube de palabras
+    st.subheader(" Nube de palabras")
 
     if df_detalle.empty:
-        # ⚠️ REQUISITO: manejo de errores -> datos vacíos
+        # alert REQUISITO: manejo de errores -> datos vacíos
         st.warning("No hay palabras para generar la nube.")
     else:
         uni_nube = st.selectbox("Generar nube para:", ["Todas"] + list(datos.keys()), key="nube")
@@ -298,8 +364,8 @@ with tab3:
 # ══════════════════════════════════════════════
 
 with tab4:
-    # ⭐ REQUISITO EXTRA: Geolocalización
-    st.subheader("🗺️ Ubicación de universidades en El Salvador")
+    # start REQUISITO EXTRA: Geolocalización
+    st.subheader(" Ubicación de universidades en El Salvador")
 
     mapa = folium.Map(location=[13.7942, -88.8965], zoom_start=8, tiles="CartoDB positron")
 
@@ -330,7 +396,7 @@ with tab4:
 # ══════════════════════════════════════════════
 
 with tab5:
-    # ⭐ REQUISITO EXTRA: Comparación entre sitios web (universidades)
+    # start REQUISITO EXTRA: Comparación entre sitios web (universidades)
     st.subheader("🔍 Comparar dos universidades")
     unis = list(datos.keys())
 
@@ -363,7 +429,7 @@ with tab5:
             # Palabras en común y exclusivas
             comunes = palabras_a & palabras_b
             c1, c2, c3 = st.columns(3)
-            c1.markdown(f"**🤝 En común**\n\n{', '.join(sorted(comunes)) or 'Ninguna'}")
+            c1.markdown(f"** En común**\n\n{', '.join(sorted(comunes)) or 'Ninguna'}")
             c2.markdown(f"**Solo {uni_a}**\n\n{', '.join(sorted(palabras_a - palabras_b)) or 'Ninguna'}")
             c3.markdown(f"**Solo {uni_b}**\n\n{', '.join(sorted(palabras_b - palabras_a)) or 'Ninguna'}")
 
@@ -388,7 +454,7 @@ with tab5:
 # ══════════════════════════════════════════════
 
 with tab6:
-    st.subheader("ℹ️ Acerca del proyecto")
+    st.subheader(" Acerca del proyecto")
     st.markdown("""
     **Proyecto Final - Bases de Datos**  
     Universidad de Oriente (UNIVO) · El Salvador · 2026
@@ -399,11 +465,11 @@ with tab6:
     | Componente | Descripción |
     |---|---|
     | 🕷️ Crawler | Recorre páginas internas respetando el dominio |
-    | 📄 Scraping | Extrae palabras clave, correos, teléfonos e imágenes |
-    | 💾 Almacenamiento | pandas DataFrame + MySQL (universidades_sv) |
-    | 📊 Minería | Frecuencias, tendencias y categorías predominantes |
-    | 📈 Visualización | Barras, histograma, heatmap, nube, mapa |
-    | 🎨 Interfaz | Dashboard web con Streamlit |
+    |  Scraping | Extrae palabras clave, correos, teléfonos e imágenes |
+    |  Almacenamiento | pandas DataFrame + MySQL (universidades_sv) |
+    |  Minería | Frecuencias, tendencias y categorías predominantes |
+    |  Visualización | Barras, histograma, heatmap, nube, mapa |
+    |  Interfaz | Dashboard web con Streamlit |
 
     **Tecnologías:** `requests` · `BeautifulSoup` · `pandas` · `plotly` · `wordcloud` · `folium` · `MySQL` · `streamlit`
 
@@ -415,8 +481,8 @@ with tab6:
     """)
 
     st.divider()
-    # ⭐ REQUISITO EXTRA: Exportación a PDF
-    st.subheader("📄 Exportar reporte PDF")
+    # start REQUISITO EXTRA: Exportación a PDF
+    st.subheader(" Exportar reporte PDF")
 
     if st.button("Generar PDF"):
         buffer = io.BytesIO()
@@ -506,10 +572,117 @@ with tab6:
         # Pie
         story.append(Spacer(1, 16))
         story.append(HRFlowable(width="100%", thickness=0.8, color=colors.HexColor("#cbd5e1")))
-        story.append(Paragraph("Proyecto Final BD - UNIVO 2026 | Alvin Rosales U20260430", normal))
+        story.append(Paragraph("Proyecto Final BD - UNIVO 2026", normal))
 
         doc.build(story)
         buffer.seek(0)
 
-        st.download_button("⬇️ Descargar PDF", data=buffer,
+        st.download_button(" Descargar PDF", data=buffer,
                            file_name="reporte_universidades.pdf", mime="application/pdf")
+        
+# ══════════════════════════════════════════════
+# TAB 7 - IMÁGENES, CORREOS Y TELÉFONOS
+# ══════════════════════════════════════════════
+
+with tab7:
+    st.subheader("📁 Archivos descargados por universidad")
+
+    CARPETA_IMAGENES  = "imagenes_descargadas"
+    CARPETA_CONTACTOS = "contactos"
+
+    # Selector de universidad - usamos las siglas del JSON activo
+    unis_disponibles = list(datos.keys())
+    uni_arch = st.selectbox(
+        "Seleccioná una universidad:",
+        unis_disponibles,
+        format_func=lambda s: f"{s} — {datos[s]['nombre']}",
+        key="sel_archivos"
+    )
+
+    st.divider()
+
+    # ── SECCIÓN 1: CONTACTOS ──────────────────────────────────────────
+
+    ruta_contacto = os.path.join(CARPETA_CONTACTOS, f"{uni_arch}_contactos.json")
+
+    col_correos, col_telefonos = st.columns(2)
+
+    with col_correos:
+        st.markdown("#### Correos electrónicos")
+        # Intentamos leer del archivo de contactos; fallback al JSON de resultados
+        if os.path.exists(ruta_contacto):
+            with open(ruta_contacto, "r", encoding="utf-8") as f:
+                contactos = json.load(f)
+            correos = contactos.get("correos", [])
+        else:
+            #  Manejo de errores: archivo no existe, usamos los datos del JSON principal
+            correos = datos[uni_arch].get("correos", [])
+
+        if correos:
+            for c in correos:
+                # Mostramos cada correo como badge/chip limpio
+                st.markdown(
+                    f'<span style="background:#eff6ff;color:#1d4ed8;padding:4px 10px;'
+                    f'border-radius:20px;font-size:0.85rem;display:inline-block;margin:3px">'
+                    f'✉️ {c}</span>',
+                    unsafe_allow_html=True
+                )
+        else:
+            st.caption("Sin correos registrados.")
+
+    with col_telefonos:
+        st.markdown("#### 📞 Teléfonos")
+        if os.path.exists(ruta_contacto):
+            telefonos = contactos.get("telefonos", [])
+        else:
+            telefonos = datos[uni_arch].get("telefonos", [])
+
+        if telefonos:
+            for t in telefonos:
+                st.markdown(
+                    f'<span style="background:#f0fdf4;color:#15803d;padding:4px 10px;'
+                    f'border-radius:20px;font-size:0.85rem;display:inline-block;margin:3px">'
+                    f'📞 {t}</span>',
+                    unsafe_allow_html=True
+                )
+        else:
+            st.caption("Sin teléfonos registrados.")
+
+    st.divider()
+
+    # ── SECCIÓN 2: IMÁGENES ───────────────────────────────────────────
+
+    st.markdown("#### 🖼️ Imágenes descargadas")
+
+    carpeta_imgs = os.path.join(CARPETA_IMAGENES, uni_arch)
+
+    if not os.path.exists(carpeta_imgs):
+        # Manejo de errores: carpeta de imágenes no existe
+        st.caption("No hay imágenes descargadas para esta universidad.")
+    else:
+        # Filtramos solo extensiones de imagen válidas
+        EXTS_VALIDAS = {".jpg", ".jpeg", ".png", ".webp"}
+        imagenes = [
+            f for f in os.listdir(carpeta_imgs)
+            if os.path.splitext(f)[1].lower() in EXTS_VALIDAS
+        ]
+
+        if not imagenes:
+            st.caption("La carpeta existe pero no tiene imágenes.")
+        else:
+            st.caption(f"{len(imagenes)} imagen(es) encontrada(s) en `{carpeta_imgs}/`")
+
+            # Mostramos en grilla de 4 columnas para que se vea compacto y ordenado
+            COLS = 4
+            for i in range(0, len(imagenes), COLS):
+                fila = imagenes[i:i + COLS]
+                cols = st.columns(COLS)
+                for col, nombre_img in zip(cols, fila):
+                    ruta_img = os.path.join(carpeta_imgs, nombre_img)
+                    with col:
+                        try:
+                            # st.image maneja PNG/JPG/WEBP nativamente
+                            st.image(ruta_img, caption=nombre_img, use_container_width=True)
+                        except Exception:
+                            #  Manejo de errores: imagen corrupta o ilegible
+                            st.caption(f" {nombre_img} no se pudo mostrar")
